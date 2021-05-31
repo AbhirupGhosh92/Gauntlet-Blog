@@ -5,18 +5,21 @@ import 'package:flutter/material.dart';
 import 'package:gauntletwebapp/widgets/ui/CustomWaveWidget.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:gauntletwebapp/widgets/ui/GlowingCardsLayout.dart';
+import 'package:gauntletwebapp/widgets/ui/ErrorPage.dart';
 
 void main() {
   runApp(MyApp());
 }
 
 bool isOpenFromDevice() {
-  return !window.navigator.userAgent
-          .toString()
-          .toLowerCase()
-          .contains("android") &&
-      !window.navigator.userAgent.toString().toLowerCase().contains("iphone") &&
-      !window.navigator.userAgent.toString().toLowerCase().contains("ipad");
+  String agent = window.navigator.userAgent.toString().toLowerCase();
+  if (agent.toLowerCase().contains("android") ||
+      agent.toLowerCase().contains("iphone") ||
+      agent.toLowerCase().contains("ipad")) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 class MyApp extends StatelessWidget {
@@ -134,11 +137,7 @@ class _MyHomePageState extends State<GauntletHomePage> {
                 ],
               ),
             )
-          : Container(
-              child: Text(
-              "Sorry the site is not optimised for mobile devices yet , To see it in its full glory please open it on a computer",
-              style: summaryStyle,
-            )),
+          : ErrorPage(),
     );
   }
 }

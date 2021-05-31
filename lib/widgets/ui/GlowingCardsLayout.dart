@@ -1,38 +1,75 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class GlowingCardsLayout extends StatelessWidget {
+  final String imageUrl;
+  final String headerText;
+  final String subText;
+  final String logo;
+
   GlowingCardsLayout(
       {Key? key,
       required this.imageUrl,
       required this.headerText,
-      required this.subText})
-      : super(key: key);
+      required this.subText,
+      required this.logo});
 
-  final imageUrl;
-  final headerText;
-  final subText;
+  final headerStyle = GoogleFonts.ubuntuMono(
+      textStyle: TextStyle(color: Colors.white, fontSize: 20));
+  final headerSubStyle = TextStyle(color: Colors.white, fontSize: 15.0);
 
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: 300,
+      alignment: Alignment.topLeft,
       child: Card(
         color: Colors.transparent,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
-        elevation: 0,
-        child: Column(
-          children: [
-            SvgPicture.asset(
-              imageUrl,
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20),
+            side: BorderSide(
               color: Colors.white,
-              semanticsLabel: 'Acme Logo',
-              width: 200,
-              height: 200,
-            ),
-            Text(headerText),
-            Text(subText),
-          ],
-        ),
+              width: 5.0,
+            )),
+        elevation: 0,
+        child: Container(
+            alignment: Alignment.topLeft,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                        alignment: Alignment.topLeft,
+                        margin: EdgeInsets.only(top: 20, right: 20),
+                        child: SvgPicture.asset(
+                          imageUrl,
+                          color: Colors.white,
+                          semanticsLabel: logo,
+                          width: 70,
+                          height: 70,
+                        )),
+                    Container(
+                        margin: EdgeInsets.only(right: 20, top: 20),
+                        child: Text(
+                          headerText,
+                          style: headerStyle,
+                        )),
+                  ],
+                ),
+                Container(
+                    margin: EdgeInsets.only(
+                        top: 20, left: 20, right: 20, bottom: 20),
+                    child: Text(
+                      subText,
+                      style: headerSubStyle,
+                    ))
+              ],
+            )),
       ),
     );
   }

@@ -83,7 +83,7 @@ class _MyHomePageState extends State<GauntletHomePage> {
                         ],
                       ),
                       Container(
-                        margin: EdgeInsets.only(top: 300.0),
+                        margin: EdgeInsets.only(top: 300.0, left: 50),
                         child: Text("What makes a great Product",
                             style: textStyle),
                       ),
@@ -105,31 +105,44 @@ class _MyHomePageState extends State<GauntletHomePage> {
                             textAlign: TextAlign.center,
                           )),
                       Container(
-                        margin: EdgeInsets.only(top: 100.0),
+                        margin: EdgeInsets.only(top: 100.0, left: 50),
                         child: Text("Feathers on my Cap", style: textStyle),
                       ),
                       Container(
                           margin: EdgeInsets.only(top: 50),
                           child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
                             children: [
                               GlowingCardsLayout(
-                                  imageUrl: "images/svg/test.svg",
-                                  headerText: "Mobile Development",
-                                  subText: "Mahayara"),
+                                imageUrl: "images/svg/test.svg",
+                                headerText: "Mobile\nDevelopment",
+                                subText:
+                                    "Built a wide range of mobile applications\n" +
+                                        "Ranging from Financial services, retail  to AI bots and security apps",
+                                logo: "",
+                              ),
                               GlowingCardsLayout(
                                   imageUrl:
                                       "images/svg/artificial-intelligence.svg",
-                                  headerText: "Artificial Intelligence",
-                                  subText: "Mahayara"),
+                                  headerText: "Artificial\nIntelligence",
+                                  subText:
+                                      "Built a wide range of AI applications not limited to \n" +
+                                          "AI bots but text and Image classifiers ",
+                                  logo: ""),
                               GlowingCardsLayout(
                                   imageUrl: "images/svg/data-complexity.svg",
-                                  headerText: "Solution Architecture",
-                                  subText: "Mahayara"),
+                                  headerText: "Solution\nArchitecture",
+                                  subText:
+                                      "Experience in building a wide range of mobile applications\n" +
+                                          "Ranging from Financial services, retail  to AI bots and secyrity apps",
+                                  logo: ""),
                               GlowingCardsLayout(
                                   imageUrl: "images/svg/web-programming.svg",
-                                  headerText: "Web Development",
-                                  subText: "Mahayara")
+                                  headerText: "Web\nDevelopment",
+                                  subText:
+                                      "Experience in building a wide range of mobile applications\n" +
+                                          "Ranging from Financial services, retail  to AI bots and secyrity apps",
+                                  logo: "")
                             ],
                           ))
                     ],

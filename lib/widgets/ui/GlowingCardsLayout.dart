@@ -17,12 +17,14 @@ class GlowingCardsLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Card(
-        elevation: 5,
+        color: Colors.transparent,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
+        elevation: 0,
         child: Column(
           children: [
             SvgPicture.asset(
               imageUrl,
-              color: Colors.black,
+              color: Colors.white,
               semanticsLabel: 'Acme Logo',
               width: 200,
               height: 200,

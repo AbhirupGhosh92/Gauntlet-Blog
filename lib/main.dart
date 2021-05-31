@@ -114,7 +114,7 @@ class _MyHomePageState extends State<GauntletHomePage> {
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
                               GlowingCardsLayout(
-                                  imageUrl: " test.svg",
+                                  imageUrl: "images/svg/test.svg",
                                   headerText: "Mobile Development",
                                   subText: "Mahayara"),
                               GlowingCardsLayout(

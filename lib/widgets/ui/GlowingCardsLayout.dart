@@ -9,22 +9,26 @@ class GlowingCardsLayout extends StatelessWidget {
   final String headerText;
   final String subText;
   final String logo;
+  EdgeInsetsGeometry? margin;
 
   GlowingCardsLayout(
       {Key? key,
       required this.imageUrl,
       required this.headerText,
       required this.subText,
-      required this.logo});
+      required this.logo,
+      required this.margin});
 
   final headerStyle = GoogleFonts.ubuntuMono(
       textStyle: TextStyle(color: Colors.white, fontSize: 20));
-  final headerSubStyle = TextStyle(color: Colors.white, fontSize: 15.0);
+  final headerSubStyle = GoogleFonts.ubuntuMono(
+      textStyle: TextStyle(color: Colors.white, fontSize: 15.0));
 
   @override
   Widget build(BuildContext context) {
     return Container(
       width: 300,
+      margin: margin,
       alignment: Alignment.topLeft,
       child: Card(
         color: Colors.transparent,
@@ -32,7 +36,7 @@ class GlowingCardsLayout extends StatelessWidget {
             borderRadius: BorderRadius.circular(20),
             side: BorderSide(
               color: Colors.white,
-              width: 5.0,
+              width: 2.5,
             )),
         elevation: 0,
         child: Container(
@@ -66,6 +70,7 @@ class GlowingCardsLayout extends StatelessWidget {
                         top: 20, left: 20, right: 20, bottom: 20),
                     child: Text(
                       subText,
+                      textAlign: TextAlign.justify,
                       style: headerSubStyle,
                     ))
               ],

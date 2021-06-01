@@ -70,7 +70,8 @@ class _MyHomePageState extends State<GauntletHomePage> {
                         children: [
                           Container(
                             margin: EdgeInsets.only(top: 100.0),
-                            child: Text("Welcome", style: textStyle),
+                            child: FittedBox(
+                                child: Text("Welcome", style: textStyle)),
                           ),
                           Container(
                             margin: EdgeInsets.only(
@@ -83,10 +84,13 @@ class _MyHomePageState extends State<GauntletHomePage> {
                         ],
                       ),
                       Container(
-                        margin: EdgeInsets.only(top: 300.0, left: 50),
-                        child: Text("What makes a great Product",
-                            style: textStyle),
-                      ),
+                          alignment: Alignment.centerLeft,
+                          margin:
+                              EdgeInsets.only(top: 300.0, left: 50, right: 50),
+                          child: FittedBox(
+                            child: Text("What makes a great Product",
+                                style: textStyle),
+                          )),
                       Container(
                           alignment: Alignment.center,
                           margin: EdgeInsets.only(
@@ -105,46 +109,63 @@ class _MyHomePageState extends State<GauntletHomePage> {
                             textAlign: TextAlign.center,
                           )),
                       Container(
-                        margin: EdgeInsets.only(top: 100.0, left: 50),
-                        child: Text("Feathers on my Cap", style: textStyle),
+                        alignment: Alignment.centerLeft,
+                        margin:
+                            EdgeInsets.only(top: 100.0, left: 50, right: 50),
+                        child: FittedBox(
+                            child:
+                                Text("A complete package", style: textStyle)),
                       ),
                       Container(
-                          margin: EdgeInsets.only(top: 50),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceAround,
-                            children: [
-                              GlowingCardsLayout(
-                                imageUrl: "images/svg/test.svg",
-                                headerText: "Mobile\nDevelopment",
-                                subText:
-                                    "Built a wide range of mobile applications\n" +
-                                        "Ranging from Financial services, retail  to AI bots and security apps",
-                                logo: "",
-                              ),
-                              GlowingCardsLayout(
-                                  imageUrl:
-                                      "images/svg/artificial-intelligence.svg",
-                                  headerText: "Artificial\nIntelligence",
-                                  subText:
-                                      "Built a wide range of AI applications not limited to \n" +
-                                          "AI bots but text and Image classifiers ",
-                                  logo: ""),
-                              GlowingCardsLayout(
-                                  imageUrl: "images/svg/data-complexity.svg",
-                                  headerText: "Solution\nArchitecture",
-                                  subText:
-                                      "Experience in building a wide range of mobile applications\n" +
-                                          "Ranging from Financial services, retail  to AI bots and secyrity apps",
-                                  logo: ""),
-                              GlowingCardsLayout(
-                                  imageUrl: "images/svg/web-programming.svg",
-                                  headerText: "Web\nDevelopment",
-                                  subText:
-                                      "Experience in building a wide range of mobile applications\n" +
-                                          "Ranging from Financial services, retail  to AI bots and secyrity apps",
-                                  logo: "")
-                            ],
-                          ))
+                          margin: EdgeInsets.only(top: 50, bottom: 100),
+                          child: SingleChildScrollView(
+                              scrollDirection: Axis.horizontal,
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  GlowingCardsLayout(
+                                    imageUrl: "images/svg/test.svg",
+                                    headerText: "Mobile\nDevelopment",
+                                    subText: "72.7% of all devices run Android in one form or the other. This makes android one of the most sought after mobile platforms for business\n\n" +
+                                        "With technologies like ract native and flutter we can generate multiple apps for different platforms using a single code base.\n\n" +
+                                        "So our mobile phones are soon becoming the centre of our lives and having the ability to control the centre is really fruitful.",
+                                    logo: "",
+                                    margin:
+                                        EdgeInsets.only(left: 50, right: 10),
+                                  ),
+                                  GlowingCardsLayout(
+                                    imageUrl:
+                                        "images/svg/artificial-intelligence.svg",
+                                    headerText: "Artificial\nIntelligence",
+                                    subText: "AI and ML are the two new buzz words in town and almost all businesses are fighting to have a piece of the cake. Its predicted that within the next couple of decades, AI will outpace the human mind.\n\n" +
+                                        "It must be adopted as soon as possible. The rate at which things are being innovated in this field is mindboggling.\n\n" +
+                                        "So it is very important that we can get hold of AI/ML and use it in our business practices.",
+                                    logo: "",
+                                    margin:
+                                        EdgeInsets.only(left: 10, right: 10),
+                                  ),
+                                  GlowingCardsLayout(
+                                    imageUrl: "images/svg/data-complexity.svg",
+                                    headerText: "Solution\nArchitecture",
+                                    subText: "Building complex systems involves not only technical knowhow, but also a sense of scale and anticipation. So its important for a solutions architect to be farsighted and having a sense of scale.\n\n" +
+                                        "With the plethora of platforms and technologies at our disposal, we must cautiously choose our tech stack.\n\n" +
+                                        "In the age of the cloud revolution is an enthralling and adventurous journey.",
+                                    logo: "",
+                                    margin:
+                                        EdgeInsets.only(left: 10, right: 10),
+                                  ),
+                                  GlowingCardsLayout(
+                                      imageUrl:
+                                          "images/svg/web-programming.svg",
+                                      headerText: "Web\nDevelopment",
+                                      subText: "Ah... the good old web, ancient yet immortal, it has been and will be there to slently smirk at the new tech stacks popping up every now and then.\n\n" +
+                                          "Todays web is a lot different from its ancestor. Infact todays web doenot need to be coded in the old ways anymore.\n\n" +
+                                          "Any business will require a robust web site to before even openeing its first office. The good old web developers will always be omnipresent.",
+                                      logo: "",
+                                      margin: EdgeInsets.only(right: 50))
+                                ],
+                              )))
                     ],
                   ),
                 ],

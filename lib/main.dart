@@ -3,6 +3,7 @@ import 'dart:html';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:gauntletwebapp/widgets/ui/CustomWaveWidget.dart';
+import 'package:gauntletwebapp/widgets/ui/HoverImage.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:gauntletwebapp/widgets/ui/GlowingCardsLayout.dart';
 import 'package:gauntletwebapp/widgets/ui/ErrorPage.dart';
@@ -148,7 +149,7 @@ class _MyHomePageState extends State<GauntletHomePage> {
                                   ),
                                   GlowingCardsLayout(
                                     imageUrl: "images/svg/data-complexity.svg",
-                                    headerText: "Solution\nArchitecture",
+                                    headerText: "System\nDesign",
                                     subText: "Building complex systems involves not only technical knowhow, but also a sense of scale and anticipation. So its important for a solutions architect to be farsighted and having a sense of scale.\n\n" +
                                         "With the plethora of platforms and technologies at our disposal, we must cautiously choose our tech stack.\n\n" +
                                         "In the age of the cloud revolution is an enthralling and adventurous journey.",
@@ -165,12 +166,53 @@ class _MyHomePageState extends State<GauntletHomePage> {
                                           "Any business will require a robust web site to before even openeing its first office. The good old web developers will always be omnipresent.",
                                       logo: "",
                                       margin:
+                                          EdgeInsets.only(left: 10, right: 10)),
+                                  GlowingCardsLayout(
+                                      imageUrl:
+                                          "images/svg/web-programming.svg",
+                                      headerText: "Project\nManagement",
+                                      subText: "Ah... the good old web, ancient yet immortal, it has been and will be there to slently smirk at the new tech stacks popping up every now and then.\n\n" +
+                                          "Todays web is a lot different from its ancestor. Infact todays web doenot need to be coded in the old ways anymore.\n\n" +
+                                          "Any business will require a robust web site to before even openeing its first office. The good old web developers will always be omnipresent.",
+                                      logo: "",
+                                      margin:
+                                          EdgeInsets.only(left: 10, right: 10)),
+                                  GlowingCardsLayout(
+                                      imageUrl:
+                                          "images/svg/web-programming.svg",
+                                      headerText: "Soft\nSkills",
+                                      subText: "Ah... the good old web, ancient yet immortal, it has been and will be there to slently smirk at the new tech stacks popping up every now and then.\n\n" +
+                                          "Todays web is a lot different from its ancestor. Infact todays web doenot need to be coded in the old ways anymore.\n\n" +
+                                          "Any business will require a robust web site to before even openeing its first office. The good old web developers will always be omnipresent.",
+                                      logo: "",
+                                      margin:
                                           EdgeInsets.only(left: 10, right: 50))
                                 ],
                               ))),
-                      Row(
-                        children: [],
-                      )
+                      Container(
+                          margin: EdgeInsets.only(bottom: 20),
+                          alignment: Alignment.center,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              HoverImage(
+                                imageUrl: "images/svg/linkedin.svg",
+                                hoverColour: Colors.blue.shade800,
+                                redirectionUrl:
+                                    "https://www.linkedin.com/in/abhirupghosh92/",
+                              ),
+                              HoverImage(
+                                  imageUrl: "images/svg/github.svg",
+                                  hoverColour: Colors.black,
+                                  redirectionUrl:
+                                      "https://github.com/AbhirupGhosh92"),
+                              HoverImage(
+                                  imageUrl: "images/svg/kaggle.svg",
+                                  hoverColour: Colors.blue,
+                                  redirectionUrl:
+                                      "https://www.kaggle.com/ezzzio")
+                            ],
+                          ))
                     ],
                   ),
                 ],

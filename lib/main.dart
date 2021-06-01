@@ -117,6 +117,7 @@ class _MyHomePageState extends State<GauntletHomePage> {
                                 Text("A complete package", style: textStyle)),
                       ),
                       Container(
+                          alignment: Alignment.center,
                           margin: EdgeInsets.only(top: 50, bottom: 100),
                           child: SingleChildScrollView(
                               scrollDirection: Axis.horizontal,
@@ -163,9 +164,13 @@ class _MyHomePageState extends State<GauntletHomePage> {
                                           "Todays web is a lot different from its ancestor. Infact todays web doenot need to be coded in the old ways anymore.\n\n" +
                                           "Any business will require a robust web site to before even openeing its first office. The good old web developers will always be omnipresent.",
                                       logo: "",
-                                      margin: EdgeInsets.only(right: 50))
+                                      margin:
+                                          EdgeInsets.only(left: 10, right: 50))
                                 ],
-                              )))
+                              ))),
+                      Row(
+                        children: [],
+                      )
                     ],
                   ),
                 ],

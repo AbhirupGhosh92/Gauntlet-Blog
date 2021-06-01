@@ -31,6 +31,7 @@ dependencies:
   wave: ^0.2.0
   google_fonts: ^2.1.0
   flutter_svg: ^0.22.0
+  hovering: ^1.0.4
 
 dev_dependencies:
   flutter_test:

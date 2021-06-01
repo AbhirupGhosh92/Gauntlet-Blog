@@ -169,21 +169,20 @@ class _MyHomePageState extends State<GauntletHomePage> {
                                           EdgeInsets.only(left: 10, right: 10)),
                                   GlowingCardsLayout(
                                       imageUrl:
-                                          "images/svg/web-programming.svg",
+                                          "images/svg/projectManagement.svg",
                                       headerText: "Project\nManagement",
-                                      subText: "Ah... the good old web, ancient yet immortal, it has been and will be there to slently smirk at the new tech stacks popping up every now and then.\n\n" +
-                                          "Todays web is a lot different from its ancestor. Infact todays web doenot need to be coded in the old ways anymore.\n\n" +
-                                          "Any business will require a robust web site to before even openeing its first office. The good old web developers will always be omnipresent.",
+                                      subText: "A ship is as good as its captain. With that said, any business can't do much with all the technological muscle power and brilliant minds if it has a sloppy manager.\n\n" +
+                                          "So its essential that there is a strong leadership which can manage as well as motivate the brilliant minds to produce extarordinary things.\n\n" +
+                                          "Hence good project management is essential when it comes to any sucessful business which believe in innovation.",
                                       logo: "",
                                       margin:
                                           EdgeInsets.only(left: 10, right: 10)),
                                   GlowingCardsLayout(
-                                      imageUrl:
-                                          "images/svg/web-programming.svg",
+                                      imageUrl: "images/svg/communication.svg",
                                       headerText: "Soft\nSkills",
-                                      subText: "Ah... the good old web, ancient yet immortal, it has been and will be there to slently smirk at the new tech stacks popping up every now and then.\n\n" +
-                                          "Todays web is a lot different from its ancestor. Infact todays web doenot need to be coded in the old ways anymore.\n\n" +
-                                          "Any business will require a robust web site to before even openeing its first office. The good old web developers will always be omnipresent.",
+                                      subText: "When life gives you lemons , make lemonade out of it. Well its easier said than done even though there are so many techniques floating around.\n\n" +
+                                          "Technical knowledge takes us just far enough but to go beyond we must know how to communicate, present and stimulate and also to deal with uneasy situations.\n\n" +
+                                          "So for certified success in someones career, Soft skills and good communication are more important than technical skills .",
                                       logo: "",
                                       margin:
                                           EdgeInsets.only(left: 10, right: 50))

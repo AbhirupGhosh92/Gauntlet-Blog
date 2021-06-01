@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:gauntletwebapp/widgets/screens/SubjectScreens.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class GlowingCardsLayout extends StatefulWidget {
@@ -77,6 +78,7 @@ class _GlowingCardState extends State<GlowingCardsLayout>
   Widget build(BuildContext context) {
     return Container(
       width: 300,
+      height: 380,
       margin: margin,
       alignment: Alignment.topLeft,
       child: MouseRegion(
@@ -90,52 +92,59 @@ class _GlowingCardState extends State<GlowingCardsLayout>
                   controller?.reverse();
                 })
               },
-          child: Material(
-            color: animation?.value,
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(20),
-                side: BorderSide(
-                  color: Colors.white,
-                  width: 2.5,
-                )),
-            elevation: _thisElevation,
-            child: Container(
-                alignment: Alignment.topLeft,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
+          child: GestureDetector(
+              onTap: () => {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (BuildContext context) => SubjectScreen()))
+                  },
+              child: Material(
+                color: animation?.value,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
+                    side: BorderSide(
+                      color: Colors.white,
+                      width: 2.5,
+                    )),
+                elevation: _thisElevation,
+                child: Container(
+                    alignment: Alignment.topLeft,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
                       children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                                alignment: Alignment.topLeft,
+                                margin: EdgeInsets.only(top: 20, right: 20),
+                                child: SvgPicture.asset(
+                                  imageUrl,
+                                  color: Colors.white,
+                                  semanticsLabel: logo,
+                                  width: 70,
+                                  height: 70,
+                                )),
+                            Container(
+                                margin: EdgeInsets.only(right: 20, top: 20),
+                                child: Text(
+                                  headerText,
+                                  style: headerStyle,
+                                )),
+                          ],
+                        ),
                         Container(
-                            alignment: Alignment.topLeft,
-                            margin: EdgeInsets.only(top: 20, right: 20),
-                            child: SvgPicture.asset(
-                              imageUrl,
-                              color: Colors.white,
-                              semanticsLabel: logo,
-                              width: 70,
-                              height: 70,
-                            )),
-                        Container(
-                            margin: EdgeInsets.only(right: 20, top: 20),
+                            margin: EdgeInsets.only(
+                                top: 20, left: 20, right: 20, bottom: 20),
                             child: Text(
-                              headerText,
-                              style: headerStyle,
-                            )),
+                              subText,
+                              textAlign: TextAlign.justify,
+                              style: headerSubStyle,
+                            ))
                       ],
-                    ),
-                    Container(
-                        margin: EdgeInsets.only(
-                            top: 20, left: 20, right: 20, bottom: 20),
-                        child: Text(
-                          subText,
-                          textAlign: TextAlign.justify,
-                          style: headerSubStyle,
-                        ))
-                  ],
-                )),
-          )),
+                    )),
+              ))),
     );
   }
 }

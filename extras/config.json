@@ -33,40 +33,40 @@
   },
   "title_cards_tutorials" : [
     {
-      "order" : 1,
       "id" : "artificial_intelligence",
       "header" : "",
-      "sub_text" : ""
+      "sub_text" : "",
+      "icon_url" : ""
     },
     {
-      "order" : 0,
       "id" : "mobile_development",
       "header" : "",
-      "sub_text" : ""
+      "sub_text" : "",
+      "icon_url" : ""
     },
     {
-      "order" : 2,
       "id" : "project_management",
       "header" : "",
-      "sub_text" : ""
+      "sub_text" : "",
+      "icon_url" : ""
     },
     {
-      "order" : 5,
       "id" : "soft_skills",
       "header" : "",
-      "sub_text" : ""
+      "sub_text" : "",
+      "icon_url" : ""
     },
     {
-      "order" : 3,
       "id" : "system_design",
       "header" : "",
-      "sub_text" : ""
+      "sub_text" : "",
+      "icon_url" : ""
     },
     {
-      "order" : 4,
       "id" : "web_development",
       "header" : "",
-      "sub_text" : ""
+      "sub_text" : "",
+      "icon_url" : ""
     }
   ]
 }

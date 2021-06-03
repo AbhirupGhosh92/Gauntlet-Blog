@@ -64,7 +64,9 @@ class _MyHomePageState extends State<GauntletHomePage> {
                 alignment: AlignmentDirectional.topCenter,
                 children: [
                   CustomWaveWidgets(),
-                  ListView(
+                  PageView(
+                    scrollDirection: Axis.vertical,
+                    controller: PageController(),
                     children: [
                       Stack(
                         alignment: Alignment.topCenter,
@@ -84,110 +86,120 @@ class _MyHomePageState extends State<GauntletHomePage> {
                           ),
                         ],
                       ),
-                      Container(
+                      ListView(children: [
+                        Container(
+                            alignment: Alignment.centerLeft,
+                            margin:
+                                EdgeInsets.only(top: 0.0, left: 50, right: 50),
+                            child: FittedBox(
+                              child: Text("What makes a great Product",
+                                  style: textStyle),
+                            )),
+                        Container(
+                            alignment: Alignment.center,
+                            margin: EdgeInsets.only(
+                                top: 50, left: 50, right: 50, bottom: 100),
+                            child: Text(
+                              "A great product is a combination of good artistic taste and cutting edge technology, melding into an " +
+                                  "amalgamation, capable of solving a problem in the easiest way possible. It should be easy to use, intuitive " +
+                                  "and most importantly it should do what it does better than the rest.\n\n\n\n" +
+                                  "All around us we have many examples of such great products. Products which are integral part of our lives" +
+                                  " which have made us rely on them so much that we cannot imagine a world without them. They all have the characteristics " +
+                                  "of a great prodect , a good design and cutting edge technology combined together to solve a problem better than the rest.\n\n\n\n" +
+                                  " Yet looking back a few years from now , most of these products didnot exist and most of the problems that they solve now were not problems then." +
+                                  "I believe that there are a number of problems that we donot see yet , and there are an equal number of elegant products " +
+                                  "to be built to solve these problems.",
+                              style: summaryStyle,
+                              textAlign: TextAlign.center,
+                            ))
+                      ]),
+
+                      ListView(children: [
+                        Container(
                           alignment: Alignment.centerLeft,
                           margin:
-                              EdgeInsets.only(top: 300.0, left: 50, right: 50),
+                              EdgeInsets.only(top: 0.0, left: 50, right: 50),
                           child: FittedBox(
-                            child: Text("What makes a great Product",
-                                style: textStyle),
-                          )),
-                      Container(
-                          alignment: Alignment.center,
-                          margin: EdgeInsets.only(
-                              top: 50, left: 50, right: 50, bottom: 100),
-                          child: Text(
-                            "A great product is a combination of good artistic taste and cutting edge technology, melding into an " +
-                                "amalgamation, capable of solving a problem in the easiest way possible. It should be easy to use, intuitive " +
-                                "and most importantly it should do what it does better than the rest.\n\n\n\n" +
-                                "All around us we have many examples of such great products. Products which are integral part of our lives" +
-                                " which have made us rely on them so much that we cannot imagine a world without them. They all have the characteristics " +
-                                "of a great prodect , a good design and cutting edge technology combined together to solve a problem better than the rest.\n\n\n\n" +
-                                " Yet looking back a few years from now , most of these products didnot exist and most of the problems that they solve now were not problems then." +
-                                "I believe that there are a number of problems that we donot see yet , and there are an equal number of elegant products " +
-                                "to be built to solve these problems.",
-                            style: summaryStyle,
-                            textAlign: TextAlign.center,
-                          )),
-                      Container(
-                        alignment: Alignment.centerLeft,
-                        margin:
-                            EdgeInsets.only(top: 100.0, left: 50, right: 50),
-                        child: FittedBox(
-                            child:
-                                Text("A complete package", style: textStyle)),
-                      ),
-                      Container(
-                          alignment: Alignment.center,
-                          margin: EdgeInsets.only(top: 50, bottom: 100),
-                          child: SingleChildScrollView(
-                              scrollDirection: Axis.horizontal,
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  GlowingCardsLayout(
-                                    imageUrl: "images/svg/test.svg",
-                                    headerText: "Mobile\nDevelopment",
-                                    subText: "72.7% of all devices run Android in one form or the other. This makes android one of the most sought after mobile platforms for business\n\n" +
-                                        "With technologies like ract native and flutter we can generate multiple apps for different platforms using a single code base.\n\n" +
-                                        "So our mobile phones are soon becoming the centre of our lives and having the ability to control the centre is really fruitful.",
-                                    logo: "",
-                                    margin:
-                                        EdgeInsets.only(left: 50, right: 10),
-                                  ),
-                                  GlowingCardsLayout(
-                                    imageUrl:
-                                        "images/svg/artificial-intelligence.svg",
-                                    headerText: "Artificial\nIntelligence",
-                                    subText: "AI and ML are the two new buzz words in town and almost all businesses are fighting to have a piece of the cake. Its predicted that within the next couple of decades, AI will outpace the human mind.\n\n" +
-                                        "It must be adopted as soon as possible. The rate at which things are being innovated in this field is mindboggling.\n\n" +
-                                        "So it is very important that we can get hold of AI/ML and use it in our business practices.",
-                                    logo: "",
-                                    margin:
-                                        EdgeInsets.only(left: 10, right: 10),
-                                  ),
-                                  GlowingCardsLayout(
-                                    imageUrl: "images/svg/data-complexity.svg",
-                                    headerText: "System\nDesign",
-                                    subText: "Building complex systems involves not only technical knowhow, but also a sense of scale and anticipation. So its important for a solutions architect to be farsighted and having a sense of scale.\n\n" +
-                                        "With the plethora of platforms and technologies at our disposal, we must cautiously choose our tech stack.\n\n" +
-                                        "In the age of the cloud revolution is an enthralling and adventurous journey.",
-                                    logo: "",
-                                    margin:
-                                        EdgeInsets.only(left: 10, right: 10),
-                                  ),
-                                  GlowingCardsLayout(
+                              child:
+                                  Text("A complete package", style: textStyle)),
+                        ),
+                        Container(
+                            alignment: Alignment.center,
+                            margin: EdgeInsets.only(top: 50, bottom: 0),
+                            child: SingleChildScrollView(
+                                scrollDirection: Axis.horizontal,
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    GlowingCardsLayout(
+                                      imageUrl: "images/svg/test.svg",
+                                      headerText: "Mobile\nDevelopment",
+                                      subText: "72.7% of all devices run Android in one form or the other. This makes android one of the most sought after mobile platforms for business\n\n" +
+                                          "With technologies like ract native and flutter we can generate multiple apps for different platforms using a single code base.\n\n" +
+                                          "So our mobile phones are soon becoming the centre of our lives and having the ability to control the centre is really fruitful.",
+                                      logo: "",
+                                      margin:
+                                          EdgeInsets.only(left: 50, right: 10),
+                                    ),
+                                    GlowingCardsLayout(
                                       imageUrl:
-                                          "images/svg/web-programming.svg",
-                                      headerText: "Web\nDevelopment",
-                                      subText: "Ah... the good old web, ancient yet immortal, it has been and will be there to slently smirk at the new tech stacks popping up every now and then.\n\n" +
-                                          "Todays web is a lot different from its ancestor. Infact todays web doenot need to be coded in the old ways anymore.\n\n" +
-                                          "Any business will require a robust web site to before even openeing its first office. The good old web developers will always be omnipresent.",
+                                          "images/svg/artificial-intelligence.svg",
+                                      headerText: "Artificial\nIntelligence",
+                                      subText: "AI and ML are the two new buzz words in town and almost all businesses are fighting to have a piece of the cake. Its predicted that within the next couple of decades, AI will outpace the human mind.\n\n" +
+                                          "It must be adopted as soon as possible. The rate at which things are being innovated in this field is mindboggling.\n\n" +
+                                          "So it is very important that we can get hold of AI/ML and use it in our business practices.",
                                       logo: "",
                                       margin:
-                                          EdgeInsets.only(left: 10, right: 10)),
-                                  GlowingCardsLayout(
+                                          EdgeInsets.only(left: 10, right: 10),
+                                    ),
+                                    GlowingCardsLayout(
                                       imageUrl:
-                                          "images/svg/projectManagement.svg",
-                                      headerText: "Project\nManagement",
-                                      subText: "A ship is as good as its captain. With that said, any business can't do much with all the technological muscle power and brilliant minds if it has a sloppy manager.\n\n" +
-                                          "So its essential that there is a strong leadership which can manage as well as motivate the brilliant minds to produce extarordinary things.\n\n" +
-                                          "Hence good project management is essential when it comes to any sucessful business which believe in innovation.",
+                                          "images/svg/data-complexity.svg",
+                                      headerText: "System\nDesign",
+                                      subText: "Building complex systems involves not only technical knowhow, but also a sense of scale and anticipation. So its important for a solutions architect to be farsighted and having a sense of scale.\n\n" +
+                                          "With the plethora of platforms and technologies at our disposal, we must cautiously choose our tech stack.\n\n" +
+                                          "In the age of the cloud revolution is an enthralling and adventurous journey.",
                                       logo: "",
                                       margin:
-                                          EdgeInsets.only(left: 10, right: 10)),
-                                  GlowingCardsLayout(
-                                      imageUrl: "images/svg/communication.svg",
-                                      headerText: "Soft\nSkills",
-                                      subText: "When life gives you lemons , make lemonade out of it. Well its easier said than done even though there are so many techniques floating around.\n\n" +
-                                          "Technical knowledge takes us just far enough but to go beyond we must know how to communicate, present and stimulate and also to deal with uneasy situations.\n\n" +
-                                          "So for certified success in someones career, Soft skills and good communication are more important than technical skills .",
-                                      logo: "",
-                                      margin:
-                                          EdgeInsets.only(left: 10, right: 50))
-                                ],
-                              ))),
+                                          EdgeInsets.only(left: 10, right: 10),
+                                    ),
+                                    GlowingCardsLayout(
+                                        imageUrl:
+                                            "images/svg/web-programming.svg",
+                                        headerText: "Web\nDevelopment",
+                                        subText: "Ah... the good old web, ancient yet immortal, it has been and will be there to slently smirk at the new tech stacks popping up every now and then.\n\n" +
+                                            "Todays web is a lot different from its ancestor. Infact todays web doenot need to be coded in the old ways anymore.\n\n" +
+                                            "Any business will require a robust web site to before even openeing its first office. The good old web developers will always be omnipresent.",
+                                        logo: "",
+                                        margin: EdgeInsets.only(
+                                            left: 10, right: 10)),
+                                    GlowingCardsLayout(
+                                        imageUrl:
+                                            "images/svg/projectManagement.svg",
+                                        headerText: "Project\nManagement",
+                                        subText: "A ship is as good as its captain. With that said, any business can't do much with all the technological muscle power and brilliant minds if it has a sloppy manager.\n\n" +
+                                            "So its essential that there is a strong leadership which can manage as well as motivate the brilliant minds to produce extarordinary things.\n\n" +
+                                            "Hence good project management is essential when it comes to any sucessful business which believe in innovation.",
+                                        logo: "",
+                                        margin: EdgeInsets.only(
+                                            left: 10, right: 10)),
+                                    GlowingCardsLayout(
+                                        imageUrl:
+                                            "images/svg/communication.svg",
+                                        headerText: "Soft\nSkills",
+                                        subText: "When life gives you lemons , make lemonade out of it. Well its easier said than done even though there are so many techniques floating around.\n\n" +
+                                            "Technical knowledge takes us just far enough but to go beyond we must know how to communicate, present and stimulate and also to deal with uneasy situations.\n\n" +
+                                            "So for certified success in someones career, Soft skills and good communication are more important than technical skills .",
+                                        logo: "",
+                                        margin: EdgeInsets.only(
+                                            left: 10, right: 50))
+                                  ],
+                                )))
+                      ]),
+
+                      //Bottom Links
+
                       Container(
                           margin: EdgeInsets.only(bottom: 20),
                           alignment: Alignment.center,

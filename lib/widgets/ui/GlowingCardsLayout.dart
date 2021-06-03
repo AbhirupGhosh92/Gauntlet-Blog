@@ -7,7 +7,7 @@ class GlowingCardsLayout extends StatefulWidget {
   final String imageUrl;
   final String headerText;
   final String subText;
-  final String logo;
+  final String id;
   EdgeInsetsGeometry? margin;
 
   GlowingCardsLayout(
@@ -15,7 +15,7 @@ class GlowingCardsLayout extends StatefulWidget {
       required this.imageUrl,
       required this.headerText,
       required this.subText,
-      required this.logo,
+      required this.id,
       required this.margin})
       : super(key: key);
 
@@ -26,8 +26,8 @@ class GlowingCardsLayout extends StatefulWidget {
 
   @override
   State<StatefulWidget> createState() {
-    return _GlowingCardState(imageUrl, margin, logo, headerText, subText,
-        headerStyle, headerSubStyle);
+    return _GlowingCardState(
+        imageUrl, margin, id, headerText, subText, headerStyle, headerSubStyle);
   }
 }
 
@@ -35,7 +35,7 @@ class _GlowingCardState extends State<GlowingCardsLayout>
     with SingleTickerProviderStateMixin {
   final String imageUrl;
   final EdgeInsetsGeometry? margin;
-  final String logo;
+  final String id;
   final String headerText;
   final String subText;
   final TextStyle headerStyle;
@@ -62,7 +62,7 @@ class _GlowingCardState extends State<GlowingCardsLayout>
           });
   }
 
-  _GlowingCardState(this.imageUrl, this.margin, this.logo, this.headerText,
+  _GlowingCardState(this.imageUrl, this.margin, this.id, this.headerText,
       this.subText, this.headerStyle, this.headerSubStyle);
 
   void changeValue(bool forward) {
@@ -97,7 +97,7 @@ class _GlowingCardState extends State<GlowingCardsLayout>
                         context,
                         MaterialPageRoute(
                             builder: (BuildContext context) => SubjectScreen(
-                                  clickType: headerText,
+                                  clickType: id,
                                 )))
                   },
               child: Material(
@@ -123,7 +123,7 @@ class _GlowingCardState extends State<GlowingCardsLayout>
                                 child: SvgPicture.asset(
                                   imageUrl,
                                   color: Colors.white,
-                                  semanticsLabel: logo,
+                                  semanticsLabel: "",
                                   width: 70,
                                   height: 70,
                                 )),

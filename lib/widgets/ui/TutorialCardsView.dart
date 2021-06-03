@@ -34,12 +34,15 @@ class _TutorialCardsViewState extends State<TutorialCardsView> {
         child: ListView.builder(
             itemCount: _itemCount,
             scrollDirection: Axis.horizontal,
-            itemBuilder: (context, index) {
+            itemBuilder: (
+              context,
+              index,
+            ) {
               return GlowingCardsLayout(
                 imageUrl: itemList[index]['icon_url'],
                 headerText: itemList[index]['header'],
                 subText: itemList[index]['sub_text'],
-                logo: "",
+                id: itemList[index]['id'],
                 margin: EdgeInsets.only(
                     top: 100,
                     left: index == 0 ? 50 : 10,

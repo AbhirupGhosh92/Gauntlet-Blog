@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:gauntletwebapp/widgets/ui/CustomWaveWidget.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:gauntletwebapp/widgets/ui/VideoPlayerScreen.dart';
+import 'package:gauntletwebapp/widgets/ui/VideoPlayerScreenVideo.dart';
 
 class SubjectScreen extends StatefulWidget {
   final String clickType;
@@ -19,17 +19,23 @@ class _SubjectScreenState extends State<SubjectScreen> {
   final String clickType;
   _SubjectScreenState(this.clickType);
 
-  final TextStyle headerStyle = GoogleFonts.ubuntuMono(
+  final TextStyle headerStyle = GoogleFonts.pacifico(
       textStyle: TextStyle(color: Colors.white, fontSize: 40));
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Stack(alignment: AlignmentDirectional.topCenter, children: [
+        body: Stack(alignment: AlignmentDirectional.topStart, children: [
       CustomWaveWidgets(),
-      VideoPlayerScreen(
-        margin: EdgeInsets.only(left: 0),
-      ),
+      Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          Text("Curated Videos", style: headerStyle),
+          VideoPlayerScreenVideo(
+            margin: EdgeInsets.only(left: 0),
+          )
+        ],
+      )
       // ListView(
       //   children: [
       //     Container(

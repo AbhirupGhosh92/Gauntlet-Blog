@@ -3,24 +3,24 @@ import 'package:flutter/material.dart';
 import 'dart:html';
 import 'package:video_player_web/video_player_web.dart';
 
-class VideoPlayerScreen extends StatefulWidget {
+class VideoPlayerScreenVideo extends StatefulWidget {
   final margin;
 
-  VideoPlayerScreen({Key? key, required this.margin}) : super(key: key);
+  VideoPlayerScreenVideo({Key? key, required this.margin}) : super(key: key);
 
   @override
   State<StatefulWidget> createState() {
-    return _VideoPlayerScreenState(margin);
+    return _VideoPlayerScreenVideoState(margin);
   }
 }
 
-class _VideoPlayerScreenState extends State<VideoPlayerScreen>
+class _VideoPlayerScreenVideoState extends State<VideoPlayerScreenVideo>
     with SingleTickerProviderStateMixin {
   final margin;
   dynamic _controller;
   dynamic _initializeVideoPlayerFuture;
 
-  _VideoPlayerScreenState(this.margin);
+  _VideoPlayerScreenVideoState(this.margin);
   AnimationController? controller;
   Animation<Color?>? animation;
   double _thisElevation = 1.0;

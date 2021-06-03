@@ -1,0 +1,72 @@
+{
+  "videos" : {
+    "artificial_intelligence" : [ {
+      "url" : "",
+      "video_id" : "",
+      "video_title" : ""
+    } ],
+    "mobile_development" : [ {
+      "url" : "",
+      "video_id" : "",
+      "video_title" : ""
+    } ],
+    "project_management" : [ {
+      "url" : "",
+      "video_id" : "",
+      "video_title" : ""
+    } ],
+    "soft_skills" : [ {
+      "url" : "",
+      "video_id" : "",
+      "video_title" : ""
+    } ],
+    "system_design" : [ {
+      "url" : "",
+      "video_id" : "",
+      "video_title" : ""
+    } ],
+    "web_development" : [ {
+      "url" : "",
+      "video_id" : "",
+      "video_title" : ""
+    } ]
+  },
+  "title_cards_tutorials" : [
+    {
+      "order" : 1,
+      "id" : "artificial_intelligence",
+      "header" : "",
+      "sub_text" : ""
+    },
+    {
+      "order" : 0,
+      "id" : "mobile_development",
+      "header" : "",
+      "sub_text" : ""
+    },
+    {
+      "order" : 2,
+      "id" : "project_management",
+      "header" : "",
+      "sub_text" : ""
+    },
+    {
+      "order" : 5,
+      "id" : "soft_skills",
+      "header" : "",
+      "sub_text" : ""
+    },
+    {
+      "order" : 3,
+      "id" : "system_design",
+      "header" : "",
+      "sub_text" : ""
+    },
+    {
+      "order" : 4,
+      "id" : "web_development",
+      "header" : "",
+      "sub_text" : ""
+    }
+  ]
+}

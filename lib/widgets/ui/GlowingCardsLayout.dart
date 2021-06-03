@@ -16,7 +16,8 @@ class GlowingCardsLayout extends StatefulWidget {
       required this.headerText,
       required this.subText,
       required this.logo,
-      required this.margin});
+      required this.margin})
+      : super(key: key);
 
   final headerStyle = GoogleFonts.ubuntuMono(
       textStyle: TextStyle(color: Colors.white, fontSize: 20));
@@ -40,8 +41,6 @@ class _GlowingCardState extends State<GlowingCardsLayout>
   final TextStyle headerStyle;
   final TextStyle headerSubStyle;
 
-  double _elevationLow = 1.0;
-  double _elevationHigh = 10.0;
   double _thisElevation = 1.0;
   Color defaultColor = Colors.black.withOpacity(0.01);
   AnimationController? controller;
@@ -97,7 +96,9 @@ class _GlowingCardState extends State<GlowingCardsLayout>
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (BuildContext context) => SubjectScreen()))
+                            builder: (BuildContext context) => SubjectScreen(
+                                  clickType: headerText,
+                                )))
                   },
               child: Material(
                 color: animation?.value,

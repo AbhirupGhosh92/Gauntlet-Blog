@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'dart:html';
 import 'package:video_player_web/video_player_web.dart';
 
-class VideoPlayerScreenVideo extends StatefulWidget {
+class RootItemWidget extends StatefulWidget {
   final margin;
 
-  VideoPlayerScreenVideo({Key? key, required this.margin}) : super(key: key);
+  RootItemWidget({Key? key, required this.margin}) : super(key: key);
 
   @override
   State<StatefulWidget> createState() {
@@ -14,7 +14,7 @@ class VideoPlayerScreenVideo extends StatefulWidget {
   }
 }
 
-class _VideoPlayerScreenVideoState extends State<VideoPlayerScreenVideo>
+class _VideoPlayerScreenVideoState extends State<RootItemWidget>
     with SingleTickerProviderStateMixin {
   final margin;
   dynamic _controller;
@@ -51,8 +51,8 @@ class _VideoPlayerScreenVideoState extends State<VideoPlayerScreenVideo>
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 300,
-      height: 380,
+      width: 500.0,
+      height: 200.0,
       margin: margin,
       alignment: Alignment.topLeft,
       child: MouseRegion(

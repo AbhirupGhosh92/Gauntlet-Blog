@@ -6,7 +6,7 @@ import 'package:flutter/services.dart';
 
 import 'package:gauntletwebapp/widgets/ui/CustomWaveWidget.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:gauntletwebapp/widgets/ui/VideoPlayerScreenVideo.dart';
+import 'package:gauntletwebapp/widgets/ui/RootItemWidget.dart';
 
 class SubjectScreen extends StatefulWidget {
   final String? clickType;
@@ -28,6 +28,8 @@ class _SubjectScreenState extends State<SubjectScreen> {
 
   final TextStyle headerStyle = GoogleFonts.ubuntuMono(
       textStyle: TextStyle(color: Colors.white, fontSize: 40));
+  final TextStyle subHeaderStyle = GoogleFonts.ubuntuMono(
+      textStyle: TextStyle(color: Colors.white, fontSize: 30));
 
   @override
   void initState() {
@@ -53,24 +55,52 @@ class _SubjectScreenState extends State<SubjectScreen> {
     return Scaffold(
         body: Stack(alignment: AlignmentDirectional.topStart, children: [
       CustomWaveWidgets(),
-      Column(
+      ListView(
+        shrinkWrap: true,
         children: [
           Container(
-            margin: EdgeInsets.only(left: 20, top: 20, bottom: 20),
+            margin: EdgeInsets.only(left: 20, top: 50, bottom: 50),
             child: Text(
                 _itemList["subject"] == null
                     ? ""
                     : _itemList["subject"][clickType]["title"],
                 style: headerStyle),
           ),
-          // GridView.builder(
-          //     itemCount: 20,
-          //     gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-          //       maxCrossAxisExtent: 10,
-          //     ),
-          //     itemBuilder: (context, index) {
-          //       return VideoPlayerScreenVideo(margin: EdgeInsets.only(left: 0));
-          //     })
+          Container(
+              margin: EdgeInsets.only(left: 20, right: 20),
+              child: ListView.builder(
+                  shrinkWrap: true,
+                  scrollDirection: Axis.vertical,
+                  itemCount: _itemList["subject"][clickType]["items"].length,
+                  itemBuilder: (
+                    context,
+                    index,
+                  ) {
+                    return Column(children: [
+                      Container(
+                          alignment: Alignment.centerLeft,
+                          margin: EdgeInsets.only(bottom: 20),
+                          child: Text(
+                              _itemList["subject"][clickType]["items"][index]
+                                  ["title"],
+                              style: subHeaderStyle)),
+                      Container(
+                          margin: EdgeInsets.only(bottom: 50),
+                          child: GridView.count(
+                              shrinkWrap: true,
+                              mainAxisSpacing: 20,
+                              crossAxisSpacing: 20,
+                              crossAxisCount: 5,
+                              childAspectRatio: 1.5,
+                              children: List.generate(
+                                  _itemList["subject"][clickType]["items"]
+                                          [index]["sub_items"]
+                                      .length, (index) {
+                                return RootItemWidget(
+                                    margin: EdgeInsets.only(left: 0));
+                              })))
+                    ]);
+                  }))
         ],
       )
     ])

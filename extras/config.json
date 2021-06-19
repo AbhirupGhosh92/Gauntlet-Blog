@@ -2,14 +2,62 @@
   "subject" : {
     "artificial_intelligence" : {
     "title" : "Artificial Intelligence",
-    "video_items" : [{
-      "url" : "",
-      "video_id" : "",
-      "video_title" : ""
-    }]},
+    "items" : [{
+      "title" : "Videos",
+      "description" : "",
+      "sub_items" : [
+        {
+          "url" : "",
+          "video_id" : "",
+          "video_title" : ""
+        }
+      ]
+    },{
+      "title" : "Blogs",
+      "description" : "",
+      "sub_items" : [
+        {
+          "url" : "",
+          "video_id" : "",
+          "video_title" : ""
+        }
+      ]
+    },{
+      "title" : "Tutorials",
+      "description" : "",
+      "sub_items" : [
+        {
+          "url" : "",
+          "video_id" : "",
+          "video_title" : ""
+        }
+      ]
+    },{
+      "title" : "Cheat Sheets",
+      "description" : "",
+      "sub_items" : [
+        {
+          "url" : "",
+          "video_id" : "",
+          "video_title" : ""
+        }
+      ]
+    }
+  ]
+  },
     "mobile_development" : {
       "title" : "Mobile Development",
       "video_items" : [{
+        "url" : "",
+        "video_id" : "",
+        "video_title" : ""
+      }],
+      "post_items" : [{
+        "url" : "",
+        "video_id" : "",
+        "video_title" : ""
+      }],
+      "doc_items" : [{
         "url" : "",
         "video_id" : "",
         "video_title" : ""
@@ -17,11 +65,21 @@
     },
     "project_management" : {
       "title" : "Project Management",
-    "video_items" : [{
-      "url" : "",
-      "video_id" : "",
-      "video_title" : ""
-    }]
+      "video_items" : [{
+        "url" : "",
+        "video_id" : "",
+        "video_title" : ""
+      }],
+      "post_items" : [{
+        "url" : "",
+        "video_id" : "",
+        "video_title" : ""
+      }],
+      "doc_items" : [{
+        "url" : "",
+        "video_id" : "",
+        "video_title" : ""
+      }]
     },
     "soft_skills" : {
       "title" : "Soft Skills",
@@ -33,19 +91,39 @@
     },
     "system_design" : {
       "title" : "System Design",
-    "video_items" : [{
-      "url" : "",
-      "video_id" : "",
-      "video_title" : ""
-    }]
+      "video_items" : [{
+        "url" : "",
+        "video_id" : "",
+        "video_title" : ""
+      }],
+      "post_items" : [{
+        "url" : "",
+        "video_id" : "",
+        "video_title" : ""
+      }],
+      "doc_items" : [{
+        "url" : "",
+        "video_id" : "",
+        "video_title" : ""
+      }]
     },
     "web_development" :{
       "title" : "Web Development",
-    "video_items" : [{
-      "url" : "",
-      "video_id" : "",
-      "video_title" : ""
-    }]
+      "video_items" : [{
+        "url" : "",
+        "video_id" : "",
+        "video_title" : ""
+      }],
+      "post_items" : [{
+        "url" : "",
+        "video_id" : "",
+        "video_title" : ""
+      }],
+      "doc_items" : [{
+        "url" : "",
+        "video_id" : "",
+        "video_title" : ""
+      }]
     }
   },
   "title_cards_tutorials" : [

@@ -121,7 +121,7 @@ class _MyHomePageState extends State<GauntletHomePage> {
                               EdgeInsets.only(top: 0.0, left: 50, right: 50),
                           child: FittedBox(
                               child:
-                                  Text("A complete package", style: textStyle)),
+                                  Text("The journey begins", style: textStyle)),
                         ),
                         Container(child: TutorialCardsView())
                       ]),

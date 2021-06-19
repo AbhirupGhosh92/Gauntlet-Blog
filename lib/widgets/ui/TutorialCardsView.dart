@@ -37,6 +37,7 @@ class _TutorialCardsViewState extends State<TutorialCardsView> {
   Widget build(BuildContext context) {
     return Expanded(
         child: ListView.builder(
+            shrinkWrap: true,
             itemCount: _itemCount,
             scrollDirection: Axis.horizontal,
             itemBuilder: (

@@ -26,7 +26,7 @@ class _SubjectScreenState extends State<SubjectScreen> {
 
   _SubjectScreenState(this.clickType);
 
-  final TextStyle headerStyle = GoogleFonts.pacifico(
+  final TextStyle headerStyle = GoogleFonts.ubuntuMono(
       textStyle: TextStyle(color: Colors.white, fontSize: 40));
 
   @override
@@ -37,7 +37,7 @@ class _SubjectScreenState extends State<SubjectScreen> {
 
   _readConfig() async {
     try {
-      _itemList["header"] = "";
+      //_itemList["header"] = "";
       String config = await rootBundle.loadString('extras/config.json');
 
       setState(() {
@@ -54,28 +54,37 @@ class _SubjectScreenState extends State<SubjectScreen> {
         body: Stack(alignment: AlignmentDirectional.topStart, children: [
       CustomWaveWidgets(),
       Column(
-        mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          Text(_itemList["subject"][clickType]["title"], style: headerStyle),
-          VideoPlayerScreenVideo(
-            margin: EdgeInsets.only(left: 0),
-          )
+          Container(
+            margin: EdgeInsets.only(left: 20, top: 20, bottom: 20),
+            child: Text(_itemList["subject"][clickType]["title"],
+                style: headerStyle),
+          ),
+          // GridView.builder(
+          //     itemCount: 20,
+          //     gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+          //       maxCrossAxisExtent: 10,
+          //     ),
+          //     itemBuilder: (context, index) {
+          //       return VideoPlayerScreenVideo(margin: EdgeInsets.only(left: 0));
+          //     })
         ],
       )
-      // ListView(
-      //   children: [
-      //     Container(
-      //         margin: EdgeInsets.only(left: 50, top: 50),
-      //         alignment: Alignment.centerLeft,
-      //         child: Text(
-      //           clickType.replaceAll("\n", " "),
-      //           style: headerStyle,
-      //         )),
-      //     Container(
-      //       child: VideoPlayerScreen(),
-      //     )
-      //   ],
-      // ),
-    ]));
+    ])
+        // ListView(
+        //   children: [
+        //     Container(
+        //         margin: EdgeInsets.only(left: 50, top: 50),
+        //         alignment: Alignment.centerLeft,
+        //         child: Text(
+        //           clickType.replaceAll("\n", " "),
+        //           style: headerStyle,
+        //         )),
+        //     Container(
+        //       child: VideoPlayerScreen(),
+        //     )
+        //   ],
+        // ),
+        );
   }
 }

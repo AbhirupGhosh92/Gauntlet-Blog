@@ -20,10 +20,12 @@ class _TutorialCardsViewState extends State<TutorialCardsView> {
   void _readConfig() async {
     String config = await rootBundle.loadString('extras/config.json');
     Map<String, dynamic> config_json = jsonDecode(config);
-    setState(() {
-      _itemCount = itemList.length;
-      itemList = config_json["title_cards_tutorials"];
-    });
+    if (mounted) {
+      setState(() {
+        _itemCount = itemList.length;
+        itemList = config_json["title_cards_tutorials"];
+      });
+    }
   }
 
   @override

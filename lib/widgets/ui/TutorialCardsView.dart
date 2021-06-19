@@ -17,21 +17,24 @@ class TutorialCardsView extends StatefulWidget {
 class _TutorialCardsViewState extends State<TutorialCardsView> {
   var _itemCount = 0;
   List<dynamic> itemList = List<dynamic>.empty();
+
   void _readConfig() async {
     String config = await rootBundle.loadString('extras/config.json');
     Map<String, dynamic> config_json = jsonDecode(config);
-    if (mounted) {
-      setState(() {
-        _itemCount = itemList.length;
-        itemList = config_json["title_cards_tutorials"];
-      });
-    }
+    setState(() {
+      itemList = config_json["title_cards_tutorials"];
+      _itemCount = itemList.length;
+    });
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _readConfig();
   }
 
   @override
   Widget build(BuildContext context) {
-    _readConfig();
-
     return Expanded(
         child: ListView.builder(
             itemCount: _itemCount,

@@ -37,7 +37,7 @@ class _SubjectScreenState extends State<SubjectScreen> {
 
   _readConfig() async {
     try {
-      _itemList["header"] = "sssas";
+      _itemList["header"] = "";
       String config = await rootBundle.loadString('extras/config.json');
 
       setState(() {

@@ -57,7 +57,10 @@ class _SubjectScreenState extends State<SubjectScreen> {
         children: [
           Container(
             margin: EdgeInsets.only(left: 20, top: 20, bottom: 20),
-            child: Text(_itemList["subject"][clickType]["title"],
+            child: Text(
+                _itemList["subject"] == null
+                    ? ""
+                    : _itemList["subject"][clickType]["title"],
                 style: headerStyle),
           ),
           // GridView.builder(

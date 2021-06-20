@@ -2,49 +2,61 @@
   "subject" : {
     "artificial_intelligence" : {
     "title" : "Artificial Intelligence",
-    "items" : [{
+    "items" : [
+      {
+        "title" : "Channels",
+        "description" : "",
+        "sub_items" : [
+          {
+            "url" : "http://www.google.com",
+            "id" : "https://picsum.photos/250?image=9",
+            "title" : "tara"
+          }
+        ]
+      },
+      {
       "title" : "Videos",
       "description" : "",
       "sub_items" : [
         {
-          "url" : "",
-          "video_id" : "",
-          "video_title" : ""
+          "url" : "http://www.google.com",
+          "id" : "https://picsum.photos/250?image=9",
+          "title" : "tara"
         },
         {
-          "url" : "",
-          "video_id" : "",
-          "video_title" : ""
+          "url" : "http://www.google.com",
+          "id" : "https://picsum.photos/250?image=9",
+          "title" : "tara"
         },
         {
-          "url" : "",
-          "video_id" : "",
-          "video_title" : ""
+          "url" : "http://www.google.com",
+          "id" : "https://picsum.photos/250?image=9",
+          "title" : "tara"
         },
         {
-          "url" : "",
-          "video_id" : "",
-          "video_title" : ""
+          "url" : "http://www.google.com",
+          "id" : "https://picsum.photos/250?image=9",
+          "title" : "tara"
         },
         {
-          "url" : "",
-          "video_id" : "",
-          "video_title" : ""
+          "url" : "http://www.google.com",
+          "id" : "https://picsum.photos/250?image=9",
+          "title" : "tara"
         },
         {
-          "url" : "",
-          "video_id" : "",
-          "video_title" : ""
+          "url" : "http://www.google.com",
+          "id" : "https://picsum.photos/250?image=9",
+          "title" : "tara"
         },
         {
-          "url" : "",
-          "video_id" : "",
-          "video_title" : ""
+          "url" : "http://www.google.com",
+          "id" : "https://picsum.photos/250?image=9",
+          "title" : "tara"
         },
         {
-          "url" : "",
-          "video_id" : "",
-          "video_title" : ""
+          "url" : "http://www.google.com",
+          "id" : "https://picsum.photos/250?image=9",
+          "title" : "tara"
         }
       ]
     },{
@@ -52,9 +64,9 @@
       "description" : "",
       "sub_items" : [
         {
-          "url" : "",
-          "video_id" : "",
-          "video_title" : ""
+          "url" : "http://www.google.com",
+          "id" : "https://picsum.photos/250?image=9",
+          "title" : "tara"
         }
       ]
     },{
@@ -62,9 +74,9 @@
       "description" : "",
       "sub_items" : [
         {
-          "url" : "",
-          "video_id" : "",
-          "video_title" : ""
+          "url" : "http://www.google.com",
+          "id" : "https://picsum.photos/250?image=9",
+          "title" : "tara"
         }
       ]
     },{
@@ -72,9 +84,9 @@
       "description" : "",
       "sub_items" : [
         {
-          "url" : "",
-          "video_id" : "",
-          "video_title" : ""
+          "url" : "http://www.google.com",
+          "id" : "https://picsum.photos/250?image=9",
+          "title" : "tara"
         }
       ]
     }
@@ -87,9 +99,9 @@
       "description" : "",
       "sub_items" : [
         {
-          "url" : "",
-          "video_id" : "",
-          "video_title" : ""
+          "url" : "http://www.google.com",
+          "id" : "https://picsum.photos/250?image=9",
+          "title" : "tara"
         }
       ]
     },{
@@ -97,9 +109,9 @@
       "description" : "",
       "sub_items" : [
         {
-          "url" : "",
-          "video_id" : "",
-          "video_title" : ""
+          "url" : "http://www.google.com",
+          "id" : "https://picsum.photos/250?image=9",
+          "title" : "tara"
         }
       ]
     },{
@@ -107,9 +119,9 @@
       "description" : "",
       "sub_items" : [
         {
-          "url" : "",
-          "video_id" : "",
-          "video_title" : ""
+          "url" : "http://www.google.com",
+          "id" : "https://picsum.photos/250?image=9",
+          "title" : "tara"
         }
       ]
     },{
@@ -117,9 +129,9 @@
       "description" : "",
       "sub_items" : [
         {
-          "url" : "",
-          "video_id" : "",
-          "video_title" : ""
+          "url" : "http://www.google.com",
+          "id" : "https://picsum.photos/250?image=9",
+          "title" : "tara"
         }
       ]
     }
@@ -132,9 +144,9 @@
       "description" : "",
       "sub_items" : [
         {
-          "url" : "",
-          "video_id" : "",
-          "video_title" : ""
+          "url" : "http://www.google.com",
+          "id" : "https://picsum.photos/250?image=9",
+          "title" : "tara"
         }
       ]
     },{
@@ -142,9 +154,9 @@
       "description" : "",
       "sub_items" : [
         {
-          "url" : "",
-          "video_id" : "",
-          "video_title" : ""
+          "url" : "http://www.google.com",
+          "id" : "https://picsum.photos/250?image=9",
+          "title" : "tara"
         }
       ]
     },{
@@ -152,9 +164,9 @@
       "description" : "",
       "sub_items" : [
         {
-          "url" : "",
-          "video_id" : "",
-          "video_title" : ""
+          "url" : "http://www.google.com",
+          "id" : "https://picsum.photos/250?image=9",
+          "title" : "tara"
         }
       ]
     },{
@@ -162,9 +174,9 @@
       "description" : "",
       "sub_items" : [
         {
-          "url" : "",
-          "video_id" : "",
-          "video_title" : ""
+          "url" : "http://www.google.com",
+          "id" : "https://picsum.photos/250?image=9",
+          "title" : "tara"
         }
       ]
     }
@@ -177,9 +189,9 @@
       "description" : "",
       "sub_items" : [
         {
-          "url" : "",
-          "video_id" : "",
-          "video_title" : ""
+          "url" : "http://www.google.com",
+          "id" : "https://picsum.photos/250?image=9",
+          "title" : "tara"
         }
       ]
     },{
@@ -187,9 +199,9 @@
       "description" : "",
       "sub_items" : [
         {
-          "url" : "",
-          "video_id" : "",
-          "video_title" : ""
+          "url" : "http://www.google.com",
+          "id" : "https://picsum.photos/250?image=9",
+          "title" : "tara"
         }
       ]
     },{
@@ -197,9 +209,9 @@
       "description" : "",
       "sub_items" : [
         {
-          "url" : "",
-          "video_id" : "",
-          "video_title" : ""
+          "url" : "http://www.google.com",
+          "id" : "https://picsum.photos/250?image=9",
+          "title" : "tara"
         }
       ]
     },{
@@ -207,9 +219,9 @@
       "description" : "",
       "sub_items" : [
         {
-          "url" : "",
-          "video_id" : "",
-          "video_title" : ""
+          "url" : "http://www.google.com",
+          "id" : "https://picsum.photos/250?image=9",
+          "title" : "tara"
         }
       ]
     }
@@ -222,9 +234,9 @@
       "description" : "",
       "sub_items" : [
         {
-          "url" : "",
-          "video_id" : "",
-          "video_title" : ""
+          "url" : "http://www.google.com",
+          "id" : "https://picsum.photos/250?image=9",
+          "title" : "tara"
         }
       ]
     },{
@@ -232,9 +244,9 @@
       "description" : "",
       "sub_items" : [
         {
-          "url" : "",
-          "video_id" : "",
-          "video_title" : ""
+          "url" : "http://www.google.com",
+          "id" : "https://picsum.photos/250?image=9",
+          "title" : "tara"
         }
       ]
     },{
@@ -242,9 +254,9 @@
       "description" : "",
       "sub_items" : [
         {
-          "url" : "",
-          "video_id" : "",
-          "video_title" : ""
+          "url" : "http://www.google.com",
+          "id" : "https://picsum.photos/250?image=9",
+          "title" : "tara"
         }
       ]
     },{
@@ -252,9 +264,9 @@
       "description" : "",
       "sub_items" : [
         {
-          "url" : "",
-          "video_id" : "",
-          "video_title" : ""
+          "url" : "http://www.google.com",
+          "id" : "https://picsum.photos/250?image=9",
+          "title" : "tara"
         }
       ]
     }
@@ -267,9 +279,9 @@
       "description" : "",
       "sub_items" : [
         {
-          "url" : "",
-          "video_id" : "",
-          "video_title" : ""
+          "url" : "http://www.google.com",
+          "id" : "https://picsum.photos/250?image=9",
+          "title" : "tara"
         }
       ]
     },{
@@ -277,9 +289,9 @@
       "description" : "",
       "sub_items" : [
         {
-          "url" : "",
-          "video_id" : "",
-          "video_title" : ""
+          "url" : "http://www.google.com",
+          "id" : "https://picsum.photos/250?image=9",
+          "title" : "tara"
         }
       ]
     },{
@@ -287,9 +299,9 @@
       "description" : "",
       "sub_items" : [
         {
-          "url" : "",
-          "video_id" : "",
-          "video_title" : ""
+          "url" : "http://www.google.com",
+          "id" : "https://picsum.photos/250?image=9",
+          "title" : "tara"
         }
       ]
     },{
@@ -297,9 +309,9 @@
       "description" : "",
       "sub_items" : [
         {
-          "url" : "",
-          "video_id" : "",
-          "video_title" : ""
+          "url" : "http://www.google.com",
+          "id" : "https://picsum.photos/250?image=9",
+          "title" : "tara"
         }
       ]
     }

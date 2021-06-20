@@ -1,26 +1,36 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'dart:html';
-import 'package:video_player_web/video_player_web.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'dart:js' as js;
 
 class RootItemWidget extends StatefulWidget {
-  final margin;
+  final id;
+  final title;
+  final url;
 
-  RootItemWidget({Key? key, required this.margin}) : super(key: key);
+  RootItemWidget(
+      {Key? key,
+      required String this.id,
+      required String this.title,
+      required String this.url})
+      : super(key: key);
 
   @override
   State<StatefulWidget> createState() {
-    return _VideoPlayerScreenVideoState(margin);
+    return _VideoPlayerScreenVideoState(id, title, url);
   }
 }
 
 class _VideoPlayerScreenVideoState extends State<RootItemWidget>
     with SingleTickerProviderStateMixin {
-  final margin;
   dynamic _controller;
   dynamic _initializeVideoPlayerFuture;
-
-  _VideoPlayerScreenVideoState(this.margin);
+  final imageId;
+  final title;
+  final url;
+  _VideoPlayerScreenVideoState(
+      String this.imageId, String this.title, String this.url);
   AnimationController? controller;
   Animation<Color?>? animation;
   double _thisElevation = 1.0;
@@ -48,13 +58,23 @@ class _VideoPlayerScreenVideoState extends State<RootItemWidget>
     super.dispose();
   }
 
+  void _launchURL() {
+    js.context.callMethod('open', [url]);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 500.0,
-      height: 200.0,
-      margin: margin,
-      alignment: Alignment.topLeft,
+      width: 500,
+      height: 200,
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(20.0),
+          image: DecorationImage(
+              image: NetworkImage(
+                imageId,
+              ),
+              fit: BoxFit.cover)),
+      alignment: Alignment.center,
       child: MouseRegion(
           onEnter: (event) => {
                 setState(() {
@@ -67,22 +87,25 @@ class _VideoPlayerScreenVideoState extends State<RootItemWidget>
                 })
               },
           child: GestureDetector(
-              onTap: () => {
-                    //TODO add url redirect
-                  },
+              onTap: () => {_launchURL()},
               child: Material(
                 color: animation?.value,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20),
                     side: BorderSide(
                       color: Colors.white,
-                      width: 2.5,
+                      width: 0.5,
                     )),
                 elevation: _thisElevation,
-                child: Container(
-                  alignment: Alignment.topLeft,
-                ),
+                child:
+                    Container(alignment: Alignment.center, child: Text(title)),
               ))),
+      //   Container(
+      //     alignment: Alignment.center,
+      //     margin: EdgeInsets.only(top: 10),
+      //     child: Text("Hello"),
+      //   )
+      // ,
     );
   }
 }

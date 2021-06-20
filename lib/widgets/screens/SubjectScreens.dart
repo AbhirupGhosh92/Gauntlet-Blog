@@ -95,9 +95,13 @@ class _SubjectScreenState extends State<SubjectScreen> {
                               children: List.generate(
                                   _itemList["subject"][clickType]["items"]
                                           [index]["sub_items"]
-                                      .length, (index) {
+                                      .length, (subIndex) {
+                                var temp = _itemList["subject"][clickType]
+                                    ["items"][index]["sub_items"][subIndex];
                                 return RootItemWidget(
-                                    margin: EdgeInsets.only(left: 0));
+                                    url: temp["url"],
+                                    title: temp["title"],
+                                    id: temp["id"]);
                               })))
                     ]);
                   }))

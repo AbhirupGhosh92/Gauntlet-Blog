@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'dart:js' as js;
 
@@ -64,6 +65,9 @@ class _VideoPlayerScreenVideoState extends State<RootItemWidget>
 
   @override
   Widget build(BuildContext context) {
+    final TextStyle headerStyle = GoogleFonts.ubuntuMono(
+        textStyle: TextStyle(color: Colors.white, fontSize: 15));
+
     return Container(
       width: 500,
       height: 200,
@@ -71,7 +75,8 @@ class _VideoPlayerScreenVideoState extends State<RootItemWidget>
           borderRadius: BorderRadius.circular(20.0),
           image: DecorationImage(
               image: NetworkImage(
-                imageId,
+                //This is for CORS proxy
+                "https://cors-anywhere.herokuapp.com/" + imageId,
               ),
               fit: BoxFit.cover)),
       alignment: Alignment.center,
@@ -97,8 +102,12 @@ class _VideoPlayerScreenVideoState extends State<RootItemWidget>
                       width: 0.5,
                     )),
                 elevation: _thisElevation,
-                child:
-                    Container(alignment: Alignment.center, child: Text(title)),
+                child: Container(
+                    alignment: Alignment.center,
+                    child: Text(
+                      title,
+                      style: headerStyle,
+                    )),
               ))),
       //   Container(
       //     alignment: Alignment.center,

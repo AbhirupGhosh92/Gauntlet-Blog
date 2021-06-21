@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
+import 'package:http/http.dart' as http;
 import 'GlowingCardsLayout.dart';
 
 class TutorialCardsView extends StatefulWidget {
@@ -19,12 +19,26 @@ class _TutorialCardsViewState extends State<TutorialCardsView> {
   List<dynamic> itemList = List<dynamic>.empty();
 
   void _readConfig() async {
-    String config = await rootBundle.loadString('extras/config.json');
-    Map<String, dynamic> config_json = jsonDecode(config);
-    setState(() {
-      itemList = config_json["title_cards_tutorials"];
-      _itemCount = itemList.length;
-    });
+    // String config = await rootBundle.loadString('extras/config.json');
+    // Map<String, dynamic> config_json = jsonDecode(config);
+    // setState(() {
+    //   itemList = config_json["title_cards_tutorials"];
+    //   _itemCount = itemList.length;
+    // });
+
+    try {
+      var data = await http.get(Uri.parse(
+          'https://firebasestorage.googleapis.com/v0/b/gauntlet-260920.appspot.com/o/blog_config%2Fconfig.json?alt=media&token=0b2c4519-b9de-41d2-abd8-198f1db74b5d'));
+      setState(() {
+        Map<String, dynamic> config_json = jsonDecode(data.body);
+        setState(() {
+          itemList = config_json["title_cards_tutorials"];
+          _itemCount = itemList.length;
+        });
+      });
+    } catch (err) {
+      print(err);
+    }
   }
 
   @override

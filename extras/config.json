@@ -4,7 +4,7 @@
       "title": "Artificial Intelligence",
       "items": [
         {
-          "title": "AI For Beginners",
+          "title": "AI For Beginners Full Courses",
           "description": "",
           "sub_items": [
             {
@@ -13,9 +13,14 @@
               "title": "AI Intoduction in 5 Minutes"
             },
             {
-              "url": "http://www.google.com",
-              "id": "https://picsum.photos/250?image=9",
-              "title": "tara"
+              "url": "https://www.youtube.com/watch?v=-ETQ97mXXF0",
+              "id": "https://img.youtube.com/vi/-ETQ97mXXF0/0.jpg",
+              "title": "Data Science For Beginners | Edureka"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=u2zsY-2uZiE&ab_channel=edureka%21edureka%21Verified",
+              "id": "https://img.youtube.com/vi/u2zsY-2uZiE/0.jpg",
+              "title": "Python for Data Science | 11 Hours Full Course | Great Learning"
             }
           ]
         },

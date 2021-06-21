@@ -42,7 +42,7 @@ class _VideoPlayerScreenVideoState extends State<RootItemWidget>
         duration: const Duration(milliseconds: 200), vsync: this);
     animation = ColorTween(
             begin: Colors.black.withOpacity(0.01),
-            end: Colors.black.withOpacity(0.2))
+            end: Colors.black.withOpacity(0.7))
         .animate(controller!)
           ..addListener(() {
             setState(() {
@@ -75,9 +75,10 @@ class _VideoPlayerScreenVideoState extends State<RootItemWidget>
           borderRadius: BorderRadius.circular(20.0),
           image: DecorationImage(
               image: NetworkImage(
-                //This is for CORS proxy
-                "https://cors-anywhere.herokuapp.com/" + imageId,
-              ),
+                  //This is for CORS proxy
+                  "https://cors.bridged.cc/" + imageId,
+                  scale: 1.0,
+                  headers: {"Access-Control-Allow-Origin": "*"}),
               fit: BoxFit.cover)),
       alignment: Alignment.center,
       child: MouseRegion(
@@ -106,6 +107,7 @@ class _VideoPlayerScreenVideoState extends State<RootItemWidget>
                     alignment: Alignment.center,
                     child: Text(
                       title,
+                      textAlign: TextAlign.center,
                       style: headerStyle,
                     )),
               ))),

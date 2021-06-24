@@ -77,7 +77,7 @@ class _GlowingCardState extends State<GlowingCardsLayout>
   Widget build(BuildContext context) {
     return Container(
       width: 300,
-      height: 380,
+      height: 400,
       margin: margin,
       alignment: Alignment.topLeft,
       child: MouseRegion(
@@ -142,7 +142,10 @@ class _GlowingCardState extends State<GlowingCardsLayout>
                               subText,
                               textAlign: TextAlign.justify,
                               style: headerSubStyle,
-                            ))
+                            )),
+                        Container(
+                          margin: EdgeInsets.only(top: 20),
+                        )
                       ],
                     )),
               ))),

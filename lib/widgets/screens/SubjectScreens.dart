@@ -51,7 +51,7 @@ class _SubjectScreenState extends State<SubjectScreen> {
 
     try {
       var data = await http.get(Uri.parse(
-          'https://firebasestorage.googleapis.com/v0/b/gauntlet-260920.appspot.com/o/blog_config%2Fconfig.json?alt=media&token=0b2c4519-b9de-41d2-abd8-198f1db74b5d'));
+          'https://firebasestorage.googleapis.com/v0/b/gauntlet-260920.appspot.com/o/blog_config%2Fconfig.json?alt=media&token=4cb1b441-73d0-4734-b420-b228631072f6'));
       setState(() {
         _itemList = jsonDecode(data.body);
       });

@@ -19,26 +19,26 @@ class _TutorialCardsViewState extends State<TutorialCardsView> {
   List<dynamic> itemList = List<dynamic>.empty();
 
   void _readConfig() async {
-    // String config = await rootBundle.loadString('extras/config.json');
-    // Map<String, dynamic> config_json = jsonDecode(config);
-    // setState(() {
-    //   itemList = config_json["title_cards_tutorials"];
-    //   _itemCount = itemList.length;
-    // });
+    String config = await rootBundle.loadString('extras/config.json');
+    Map<String, dynamic> config_json = jsonDecode(config);
+    setState(() {
+      itemList = config_json["title_cards_tutorials"];
+      _itemCount = itemList.length;
+    });
 
-    try {
-      var data = await http.get(Uri.parse(
-          'https://firebasestorage.googleapis.com/v0/b/gauntlet-260920.appspot.com/o/blog_config%2Fconfig.json?alt=media&token=d8b17647-7c8e-473d-8fe5-310de873845c'));
-      setState(() {
-        Map<String, dynamic> config_json = jsonDecode(data.body);
-        setState(() {
-          itemList = config_json["title_cards_tutorials"];
-          _itemCount = itemList.length;
-        });
-      });
-    } catch (err) {
-      print(err);
-    }
+    // try {
+    //   var data = await http.get(Uri.parse(
+    //       'https://firebasestorage.googleapis.com/v0/b/gauntlet-260920.appspot.com/o/blog_config%2Fconfig.json?alt=media&token=d8b17647-7c8e-473d-8fe5-310de873845c'));
+    //   setState(() {
+    //     Map<String, dynamic> config_json = jsonDecode(data.body);
+    //     setState(() {
+    //       itemList = config_json["title_cards_tutorials"];
+    //       _itemCount = itemList.length;
+    //     });
+    //   });
+    // } catch (err) {
+    //   print(err);
+    // }
   }
 
   @override

@@ -4,7 +4,7 @@
       "title": "Artificial Intelligence",
       "items": [
         {
-          "title": "AI For Beginners Full Courses",
+          "title": "AI For Beginners",
           "description": "",
           "sub_items": [
             {
@@ -20,53 +20,80 @@
             {
               "url": "https://www.youtube.com/watch?v=ad79nYk2keg&ab_channel=Simplilearn",
               "id": "https://img.youtube.com/vi/ad79nYk2keg/0.jpg",
-              "title": "Artificial Intelligence In 5 Minutes | What Is Artificial Intelligence? | AI Explained | Simplilearn"
+              "title": "Artificial Intelligence In 5 Minutes | Simplilearn"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=k2P_pHQDlp0&t=74s&ab_channel=KrishNaik",
+              "id": "https://img.youtube.com/vi/k2P_pHQDlp0/0.jpg",
+              "title": "AI VS ML VS DL VS Data Science"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=nl7kDPYD20A&ab_channel=TechWithTim",
+              "id": "https://img.youtube.com/vi/nl7kDPYD20A/0.jpg",
+              "title": "How to Get Started with Machine Learning & AI"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=ukzFI9rgwfU&ab_channel=Simplilearn",
+              "id": "https://img.youtube.com/vi/ukzFI9rgwfU/0.jpg",
+              "title": "Machine Learning Basics | Simplilearn"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=0yCJMt9Mx9c&ab_channel=TED-Ed",
+              "id": "https://img.youtube.com/vi/0yCJMt9Mx9c/0.jpg",
+              "title": "How does artificial intelligence learn?"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=I74ymkoNTnw&ab_channel=Jabrils",
+              "id": "https://img.youtube.com/vi/I74ymkoNTnw/0.jpg",
+              "title": "HOW TO GET STARTED WITH MACHINE LEARNING!"
             }
+           
+            
           ]
         },
         {
-          "title": "Videos",
+          "title": "Full Courses",
           "description": "",
           "sub_items": [
             {
-              "url": "http://www.google.com",
-              "id": "https://picsum.photos/250?image=9",
-              "title": "tara"
+              "url": "https://www.youtube.com/watch?v=JMUxmLyrhSk&ab_channel=edureka%21",
+              "id": "https://img.youtube.com/vi/JMUxmLyrhSk/0.jpg",
+              "title": "Artificial Intelligence Tutorial for Beginners | Edureka"
             },
             {
-              "url": "http://www.google.com",
-              "id": "https://picsum.photos/250?image=9",
-              "title": "tara"
+              "url": "https://www.youtube.com/watch?v=opgTF9Yf3Dk&ab_channel=GreatLearning",
+              "id": "https://img.youtube.com/vi/opgTF9Yf3Dk/0.jpg",
+              "title": "AI Full Course | Great Learning"
             },
             {
-              "url": "http://www.google.com",
-              "id": "https://picsum.photos/250?image=9",
-              "title": "tara"
+              "url": "https://www.youtube.com/watch?v=GwIo3gDZCVQ&ab_channel=edureka%21",
+              "id": "https://img.youtube.com/vi/GwIo3gDZCVQ/0.jpg",
+              "title": "Machine Learning Full Course | Edureka"
             },
             {
-              "url": "http://www.google.com",
-              "id": "https://picsum.photos/250?image=9",
-              "title": "tara"
+              "url": "https://www.youtube.com/watch?v=eq7KF7JTinU&ab_channel=Simplilearn",
+              "id": "https://img.youtube.com/vi/eq7KF7JTinU/0.jpg",
+              "title": "Machine Learning With Python Full Course | Simplilearn"
             },
             {
-              "url": "http://www.google.com",
-              "id": "https://picsum.photos/250?image=9",
-              "title": "tara"
+              "url": "https://www.youtube.com/watch?v=UkZzM-jxLv4&ab_channel=Intellipaat",
+              "id": "https://img.youtube.com/vi/UkZzM-jxLv4/0.jpg",
+              "title": "Artificial Intelligence Course | Intellipaat"
             },
             {
-              "url": "http://www.google.com",
-              "id": "https://picsum.photos/250?image=9",
-              "title": "tara"
+              "url": "https://www.youtube.com/watch?v=o8f2w0Q0ME4&ab_channel=GreatLearning",
+              "id": "https://img.youtube.com/vi/o8f2w0Q0ME4/0.jpg",
+              "title": "Statistics for Machine Learning"
             },
             {
-              "url": "http://www.google.com",
-              "id": "https://picsum.photos/250?image=9",
-              "title": "tara"
+              "url": "https://www.youtube.com/watch?v=tPYj3fFJGjk&ab_channel=freeCodeCamp.org",
+              "id": "https://img.youtube.com/vi/tPYj3fFJGjk/0.jpg",
+              "title": "TensorFlow 2.0 Complete Course"
             },
             {
-              "url": "http://www.google.com",
-              "id": "https://picsum.photos/250?image=9",
-              "title": "tara"
+              "url": "https://www.youtube.com/watch?v=t4K6lney7Zw&ab_channel=MITOpenCourseWare",
+              "id": "https://img.youtube.com/vi/t4K6lney7Zw/0.jpg",
+              "title": "Artificial Intelligence and Machine Learning | MIT"
             }
           ]
         },
@@ -75,9 +102,9 @@
           "description": "",
           "sub_items": [
             {
-              "url": "http://www.google.com",
-              "id": "https://picsum.photos/250?image=9",
-              "title": "tara"
+              "url": "https://towardsdatascience.com/bert-explained-state-of-the-art-language-model-for-nlp-f8b21a9b6270",
+              "id": "https://techcrunch.com/wp-content/uploads/2019/10/GettyImages-1039579588.jpg?w=730&crop=1",
+              "title": "BERT Explained"
             }
           ]
         },
@@ -97,10 +124,31 @@
           "description": "",
           "sub_items": [
             {
-              "url": "http://www.google.com",
-              "id": "https://picsum.photos/250?image=9",
-              "title": "tara"
+              "url": "https://medium.com/machine-learning-in-practice/cheat-sheet-of-machine-learning-and-python-and-math-cheat-sheets-a4afe4e791b6",
+              "id": "https://miro.medium.com/max/1400/1*GSgH8fDcjvCPa_AFOQ48Ug.jpeg",
+              "title": "Cheat Sheet of Machine Learning and Python (and Math)"
+            },
+            {
+              "url": "https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-supervised-learning",
+              "id": "https://stanford.edu/~shervine/teaching/cs-229/illustrations/discriminative-model.png?767b34c21d43a4fd8b59683578e132f9",
+              "title": "Supervised Learning"
+            },
+            {
+              "url": "https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-unsupervised-learning",
+              "id": "https://stanford.edu/~shervine/teaching/cs-229/illustrations/k-means-en.png?9925605d814ddadebcae2ae4754ab0a4",
+              "title": "Unsupervised Learning"
+            },
+            {
+              "url": "https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-deep-learning",
+              "id": "https://stanford.edu/~shervine/teaching/cs-229/illustrations/neural-network-en.png?835862d448ad85bc5a038848d7d7df0b",
+              "title": "Deep Learning"
+            },
+            {
+              "url": "  https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-machine-learning-tips-and-tricks",
+              "id": "https://stanford.edu/~shervine/teaching/cs-229/illustrations/roc-auc-en.png?d2dda6ec6e15f3e05597c058de976702",
+              "title": "Tips and Tricks"
             }
+           
           ]
         }
       ]
@@ -115,7 +163,7 @@
             {
               "url": "http://www.google.com",
               "id": "https://picsum.photos/250?image=9",
-              "title": "tara"
+              "title": "Lorem ipsum"
             }
           ]
         },
@@ -126,7 +174,7 @@
             {
               "url": "http://www.google.com",
               "id": "https://picsum.photos/250?image=9",
-              "title": "tara"
+              "title": "Lorem ipsum"
             }
           ]
         },
@@ -137,7 +185,7 @@
             {
               "url": "http://www.google.com",
               "id": "https://picsum.photos/250?image=9",
-              "title": "tara"
+              "title": "Lorem ipsum"
             }
           ]
         },
@@ -148,7 +196,7 @@
             {
               "url": "http://www.google.com",
               "id": "https://picsum.photos/250?image=9",
-              "title": "tara"
+              "title": "Lorem ipsum"
             }
           ]
         }
@@ -164,7 +212,7 @@
             {
               "url": "http://www.google.com",
               "id": "https://picsum.photos/250?image=9",
-              "title": "tara"
+              "title": "Lorem ipsum"
             }
           ]
         },
@@ -175,7 +223,7 @@
             {
               "url": "http://www.google.com",
               "id": "https://picsum.photos/250?image=9",
-              "title": "tara"
+              "title": "Lorem ipsum"
             }
           ]
         },
@@ -186,7 +234,7 @@
             {
               "url": "http://www.google.com",
               "id": "https://picsum.photos/250?image=9",
-              "title": "tara"
+              "title": "Lorem ipsum"
             }
           ]
         },
@@ -197,7 +245,7 @@
             {
               "url": "http://www.google.com",
               "id": "https://picsum.photos/250?image=9",
-              "title": "tara"
+              "title": "Lorem ipsum"
             }
           ]
         }
@@ -213,7 +261,7 @@
             {
               "url": "http://www.google.com",
               "id": "https://picsum.photos/250?image=9",
-              "title": "tara"
+              "title": "Lorem ipsum"
             }
           ]
         },
@@ -224,7 +272,7 @@
             {
               "url": "http://www.google.com",
               "id": "https://picsum.photos/250?image=9",
-              "title": "tara"
+              "title": "Lorem ipsum"
             }
           ]
         },
@@ -235,7 +283,7 @@
             {
               "url": "http://www.google.com",
               "id": "https://picsum.photos/250?image=9",
-              "title": "tara"
+              "title": "Lorem ipsum"
             }
           ]
         },
@@ -246,7 +294,7 @@
             {
               "url": "http://www.google.com",
               "id": "https://picsum.photos/250?image=9",
-              "title": "tara"
+              "title": "Lorem ipsum"
             }
           ]
         }
@@ -262,7 +310,7 @@
             {
               "url": "http://www.google.com",
               "id": "https://picsum.photos/250?image=9",
-              "title": "tara"
+              "title": "Lorem ipsum"
             }
           ]
         },
@@ -273,7 +321,7 @@
             {
               "url": "http://www.google.com",
               "id": "https://picsum.photos/250?image=9",
-              "title": "tara"
+              "title": "Lorem ipsum"
             }
           ]
         },
@@ -284,7 +332,7 @@
             {
               "url": "http://www.google.com",
               "id": "https://picsum.photos/250?image=9",
-              "title": "tara"
+              "title": "Lorem ipsum"
             }
           ]
         },
@@ -295,7 +343,7 @@
             {
               "url": "http://www.google.com",
               "id": "https://picsum.photos/250?image=9",
-              "title": "tara"
+              "title": "Lorem ipsum"
             }
           ]
         }
@@ -311,7 +359,7 @@
             {
               "url": "http://www.google.com",
               "id": "https://picsum.photos/250?image=9",
-              "title": "tara"
+              "title": "Lorem ipsum"
             }
           ]
         },
@@ -322,7 +370,7 @@
             {
               "url": "http://www.google.com",
               "id": "https://picsum.photos/250?image=9",
-              "title": "tara"
+              "title": "Lorem ipsum"
             }
           ]
         },
@@ -333,7 +381,7 @@
             {
               "url": "http://www.google.com",
               "id": "https://picsum.photos/250?image=9",
-              "title": "tara"
+              "title": "Lorem ipsum"
             }
           ]
         },
@@ -344,7 +392,7 @@
             {
               "url": "http://www.google.com",
               "id": "https://picsum.photos/250?image=9",
-              "title": "tara"
+              "title": "Lorem ipsum"
             }
           ]
         }

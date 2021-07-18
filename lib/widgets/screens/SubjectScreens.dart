@@ -38,26 +38,26 @@ class _SubjectScreenState extends State<SubjectScreen> {
   }
 
   _readConfig() async {
-    // try {
-    //   //_itemList["header"] = "";
-    //   String config = await rootBundle.loadString('extras/config.json');
-
-    //   setState(() {
-    //     _itemList = jsonDecode(config);
-    //   });
-    // } catch (err) {
-    //   print(err);
-    // }
-
     try {
-      var data = await http.get(Uri.parse(
-          'https://firebasestorage.googleapis.com/v0/b/gauntlet-260920.appspot.com/o/blog_config%2Fconfig.json?alt=media&token=d8b17647-7c8e-473d-8fe5-310de873845c'));
+      //_itemList["header"] = "";
+      String config = await rootBundle.loadString('extras/config.json');
+
       setState(() {
-        _itemList = jsonDecode(data.body);
+        _itemList = jsonDecode(config);
       });
     } catch (err) {
       print(err);
     }
+
+    // try {
+    //   var data = await http.get(Uri.parse(
+    //       'https://firebasestorage.googleapis.com/v0/b/gauntlet-260920.appspot.com/o/blog_config%2Fconfig.json?alt=media&token=d8b17647-7c8e-473d-8fe5-310de873845c'));
+    //   setState(() {
+    //     _itemList = jsonDecode(data.body);
+    //   });
+    // } catch (err) {
+    //   print(err);
+    // }
   }
 
   @override

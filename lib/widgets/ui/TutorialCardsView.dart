@@ -28,7 +28,7 @@ class _TutorialCardsViewState extends State<TutorialCardsView> {
 
     try {
       var data = await http.get(Uri.parse(
-          'https://firebasestorage.googleapis.com/v0/b/gauntlet-260920.appspot.com/o/blog_config%2Fconfig.json?alt=media&token=4cb1b441-73d0-4734-b420-b228631072f6'));
+          'https://firebasestorage.googleapis.com/v0/b/gauntlet-260920.appspot.com/o/blog_config%2Fconfig.json?alt=media&token=d8b17647-7c8e-473d-8fe5-310de873845c'));
       setState(() {
         Map<String, dynamic> config_json = jsonDecode(data.body);
         setState(() {

@@ -52,7 +52,7 @@
           ]
         },
         {
-          "title": "Full Courses",
+          "title": "Free Full Courses",
           "description": "",
           "sub_items": [
             {
@@ -172,7 +172,7 @@
       "title": "Mobile Development",
       "items": [
         {
-          "title": "Android Development Courses",
+          "title": "Free Android Development Courses",
           "description": "",
           "sub_items": [
             {
@@ -181,10 +181,52 @@
               "title": "Android Developer | Google developers"
             },
             {
-              "url": " https://www.youtube.com/watch?v=roDz8mMvbIg&list=PLknSwrodgQ72X4sKpzf5vT8kY80HKcUSe&ab_channel=AndroidDeveloper",
+              "url": "https://www.youtube.com/watch?v=roDz8mMvbIg&list=PLknSwrodgQ72X4sKpzf5vT8kY80HKcUSe&ab_channel=AndroidDeveloper",
               "id": "https://img.youtube.com/vi/roDz8mMvbIg/0.jpg",
               "title": "The complete Android Application Development Course"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=fis26HvvDII&ab_channel=freeCodeCamp.org",
+              "id": "https://img.youtube.com/vi/fis26HvvDII/0.jpg",
+              "title": "Android Development for Beginners - Full Course | Free code camp"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=zqHPE7Tib-c&list=PLgCYzUzKIBE_I0_tU5TvkfQpnmrP_9XV8&ab_channel=CodingWithMitch",
+              "id": "https://img.youtube.com/vi/zqHPE7Tib-c/0.jpg",
+              "title": "MVVM Recipe App (Jetpack Compose)"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=cDabx3SjuOY&list=PLQkwcJG4YTCSpJ2NLhDTHhi6XBNfk9WiC&ab_channel=PhilippLackner",
+              "id": "https://img.youtube.com/vi/cDabx3SjuOY/0.jpg",
+              "title": "Jetpack Compose Basic"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=1ukSR1GRtMU&list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ&ab_channel=TheNetNinja",
+              "id": "https://img.youtube.com/vi/1ukSR1GRtMU/0.jpg",
+              "title": "Becoming a flutter ninja"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=9XMt2hChbRo&ab_channel=edureka%21",
+              "id": "https://img.youtube.com/vi/9XMt2hChbRo/0.jpg",
+              "title": "Flutter course Edureka"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=F9UC9DY-vIU&ab_channel=freeCodeCamp.org",
+              "id": "https://img.youtube.com/vi/F9UC9DY-vIU/0.jpg",
+              "title": "Kotlin | Free code camp"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=OMxeOiPwAcQ&ab_channel=edureka%21",
+              "id": "https://img.youtube.com/vi/OMxeOiPwAcQ/0.jpg",
+              "title": "Kotlin | Edureka"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=wuiT4T_LJQo&ab_channel=DonnFelker-FreelancingforSoftwareDevelopers",
+              "id": "https://img.youtube.com/vi/wuiT4T_LJQo/0.jpg",
+              "title": "Kotlin for Beginners"
             }
+           
+           
            
           ]
         },
@@ -218,6 +260,22 @@
               "url": "http://www.google.com",
               "id": "https://picsum.photos/250?image=9",
               "title": "Lorem ipsum"
+            }
+          ]
+        },
+        {
+          "title": "Whats New",
+          "description": "",
+          "sub_items": [
+            {
+              "url": "https://www.youtube.com/watch?v=WNkIMx3Mr9o&list=PLcgGtmZOsTwFMT0dt2qA7pL__QN3kvsnC&ab_channel=LelandRichardson",
+              "id": "https://img.youtube.com/vi/WNkIMx3Mr9o/0.jpg",
+              "title": "Jetpack Compose from a Google engineer"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=fq4N0hgOWzU&list=PLOU2XLYxmsIJ7dsVN4iRuA7BT8XHzGtCr&ab_channel=GoogleDevelopers",
+              "id": "https://img.youtube.com/vi/fq4N0hgOWzU/0.jpg",
+              "title": "Flutter by google"
             }
           ]
         }
@@ -257,6 +315,101 @@
               "id": "https://picsum.photos/250?image=9",
               "title": "Lorem ipsum"
             }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "description": "",
+          "sub_items": [
+            {
+              "url": "http://www.google.com",
+              "id": "https://picsum.photos/250?image=9",
+              "title": "Lorem ipsum"
+            }
+          ]
+        }
+      ]
+    },
+    "ui_ux": {
+      "title": "UI UX",
+      "items": [
+        {
+          "title": "Free Courses",
+          "description": "",
+          "sub_items": [
+            {
+              "url": "https://www.youtube.com/watch?v=68w2VwalD5w&ab_channel=BringYourOwnLaptop",
+              "id": "https://img.youtube.com/vi/68w2VwalD5w/0.jpg",
+              "title": "Free Adobe XD Tutorial"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=viNNYye4qG0&ab_channel=DesignPilot",
+              "id": "https://img.youtube.com/vi/viNNYye4qG0/0.jpg",
+              "title": "Basics of Mobile UI Design"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=Gu1so3pz4bA&ab_channel=DesignCourse",
+              "id": "https://img.youtube.com/vi/Gu1so3pz4bA/0.jpg",
+              "title": "Figma crash course"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=_Hp_dI0DzY4&ab_channel=DesignCourse",
+              "id": "https://img.youtube.com/vi/_Hp_dI0DzY4/0.jpg",
+              "title": "UI design course for beginers"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=uL2ZB7XXIgg&ab_channel=TechEducation%26Marketing",
+              "id": "https://img.youtube.com/vi/uL2ZB7XXIgg/0.jpg",
+              "title": "UX design"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=wpmHZspl4EM&list=PLttcEXjN1UcHZj_6PaZYyh9PzPFgKHdB1&ab_channel=BringYourOwnLaptop",
+              "id": "https://img.youtube.com/vi/wpmHZspl4EM/0.jpg",
+              "title": "UX design full course"
+            }
+          ]
+        },
+        {
+          "title": "Videos",
+          "description": "",
+          "sub_items": [
+            {
+              "url": "https://www.youtube.com/watch?v=cU6T_0j2Pp4&ab_channel=CodeWithChris",
+              "id": "https://img.youtube.com/vi/cU6T_0j2Pp4/0.jpg",
+              "title": "App Design workflow"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=m1diVY4Uzjc&list=PLJ21zHI2TNh-rX-Xr_xi9KIEcbdee_1Ah&ab_channel=GoogleDesign",
+              "id": "https://img.youtube.com/vi/m1diVY4Uzjc/0.jpg",
+              "title": "Material Design by google"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=u0Re865j1EI&ab_channel=TechnoVoyager",
+              "id": "https://img.youtube.com/vi/u0Re865j1EI/0.jpg",
+              "title": "Material You | Google IO 2021"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=ZgMG_OflDq0&ab_channel=AJ%26Smart",
+              "id": "https://img.youtube.com/vi/ZgMG_OflDq0/0.jpg",
+              "title": "Ideation to appStore Journey"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=gEYq6GFAFCs&ab_channel=chunbuns",
+              "id": "https://img.youtube.com/vi/gEYq6GFAFCs/0.jpg",
+              "title": "A day in the life of a UX designer"
+            }
+          ]
+        },
+        {
+          "title": "Tutorials",
+          "description": "",
+          "sub_items": [
+            {
+              "url": "https://www.youtube.com/watch?v=wM9yVS1Q0yQ&ab_channel=PierluigiGiglio",
+              "id": "https://img.youtube.com/vi/wM9yVS1Q0yQ/0.jpg",
+              "title": "Figma tutorial"
+            }
+            
           ]
         },
         {
@@ -378,9 +531,9 @@
           "description": "",
           "sub_items": [
             {
-              "url": "http://www.google.com",
-              "id": "https://picsum.photos/250?image=9",
-              "title": "Lorem ipsum"
+              "url": "https://www.youtube.com/watch?v=i6gFRSnE6Ro&ab_channel=SantosEnoque",
+              "id": "https://img.youtube.com/vi/i6gFRSnE6Ro/0.jpg",
+              "title": "Flutter Web"
             }
           ]
         },
@@ -447,8 +600,8 @@
     },
     {
       "id": "ui_ux",
-      "header": "Project\nManagement",
-      "sub_text": "A ship is as good as its captain. With that said, any business can't do much with all the technological muscle power and brilliant minds if it has a sloppy manager.\n\nSo its essential that there is a strong leadership which can manage as well as motivate the brilliant minds to produce extarordinary things.",
+      "header": "UI UX",
+      "sub_text": "UI is the saddle, the stirrups, & the reins. UX is the feeling you get being able to ride the horse.\n\nDoesn't matter how much horsepower you are stacking under the hood , If its an ugly ride you would never take it out in the open.\n\nA good UI/UX experience is a must for a product to be recognised.",
       "icon_url": "images/svg/projectManagement.svg"
     },
     {

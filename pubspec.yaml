@@ -37,6 +37,8 @@ dependencies:
   flutter_layout_grid: ^1.0.1
   url_launcher: ^6.0.6
   fluttertoast: ^8.0.7
+  firebase_core: ^1.4.0
+  firebase_storage: ^10.0.1
 
 dev_dependencies:
   flutter_test:

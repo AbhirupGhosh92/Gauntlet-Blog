@@ -94,6 +94,21 @@
               "url": "https://www.youtube.com/watch?v=t4K6lney7Zw&ab_channel=MITOpenCourseWare",
               "id": "https://img.youtube.com/vi/t4K6lney7Zw/0.jpg",
               "title": "Artificial Intelligence and Machine Learning | MIT"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=XIrOM9oP3pA&ab_channel=CleverProgrammer",
+              "id": "https://img.youtube.com/vi/XIrOM9oP3pA/0.jpg",
+              "title": "AI Full Course for Beginners in 9 Hours [2021]"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=kmeaG_BQZ7M&list=PLrjkTql3jnm_yol-ZK1QqPSn5YSg0NF9r&ab_channel=Education4u",
+              "id": "https://img.youtube.com/vi/kmeaG_BQZ7M/0.jpg",
+              "title": "Artificial Intelligence Lectures by Bhanu Priya"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=uB3i-qV6VdM&list=PLxCzCOWd7aiHGhOHV-nwb0HR5US5GFKFI",
+              "id": "https://img.youtube.com/vi/uB3i-qV6VdM/0.jpg",
+              "title": "Gate Smashers AI"
             }
           ]
         },
@@ -113,9 +128,9 @@
           "description": "",
           "sub_items": [
             {
-              "url": "https://www.youtube.com/watch?v=uB3i-qV6VdM&list=PLxCzCOWd7aiHGhOHV-nwb0HR5US5GFKFI",
-              "id": "https://img.youtube.com/vi/uB3i-qV6VdM/0.jpg",
-              "title": "Gate Smashers AI"
+              "url": "https://www.youtube.com/watch?v=z1PGJ9quPV8&ab_channel=Khanrad",
+              "id": "https://img.youtube.com/vi/z1PGJ9quPV8/0.jpg",
+              "title": "Make Your First AI in 15 Minutes with Python"
             }
           ]
         },
@@ -157,14 +172,20 @@
       "title": "Mobile Development",
       "items": [
         {
-          "title": "Videos",
+          "title": "Android Development Courses",
           "description": "",
           "sub_items": [
             {
-              "url": "http://www.google.com",
-              "id": "https://picsum.photos/250?image=9",
-              "title": "Lorem ipsum"
+              "url": "https://www.youtube.com/watch?v=yaZ66V0mKSM&list=PLlyCyjh2pUe9wv-hU4my-Nen_SvXIzxGB&ab_channel=GoogleDevelopersIndia",
+              "id": "https://img.youtube.com/vi/yaZ66V0mKSM/0.jpg",
+              "title": "Android Developer | Google developers"
+            },
+            {
+              "url": " https://www.youtube.com/watch?v=roDz8mMvbIg&list=PLknSwrodgQ72X4sKpzf5vT8kY80HKcUSe&ab_channel=AndroidDeveloper",
+              "id": "https://img.youtube.com/vi/roDz8mMvbIg/0.jpg",
+              "title": "The complete Android Application Development Course"
             }
+           
           ]
         },
         {
@@ -423,6 +444,12 @@
       "header": "Web\nDevelopment",
       "sub_text": "Ah... the good old web, ancient yet immortal, it has been and will be there to slently smirk at the new tech stacks popping up every now and then.\n\nTodays web is a lot different from its ancestor. Infact todays web doenot need to be coded in the old ways anymore.\n\nAny business will require a robust web site to before even openeing its first office.",
       "icon_url": "images/svg/web-programming.svg"
+    },
+    {
+      "id": "ui_ux",
+      "header": "Project\nManagement",
+      "sub_text": "A ship is as good as its captain. With that said, any business can't do much with all the technological muscle power and brilliant minds if it has a sloppy manager.\n\nSo its essential that there is a strong leadership which can manage as well as motivate the brilliant minds to produce extarordinary things.",
+      "icon_url": "images/svg/projectManagement.svg"
     },
     {
       "id": "project_management",

@@ -1,5 +1,6 @@
 import 'dart:collection';
 import 'dart:convert';
+import 'dart:typed_data';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -7,6 +8,7 @@ import 'package:flutter/services.dart';
 import 'package:gauntletwebapp/widgets/ui/CustomWaveWidget.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:gauntletwebapp/widgets/ui/RootItemWidget.dart';
+import 'package:firebase_storage/firebase_storage.dart' as firebase_storage;
 
 class SubjectScreen extends StatefulWidget {
   final String? clickType;
@@ -39,25 +41,17 @@ class _SubjectScreenState extends State<SubjectScreen> {
 
   _readConfig() async {
     try {
+      firebase_storage.Reference ref = firebase_storage.FirebaseStorage.instance
+          .ref('/blog_config/config.json');
       //_itemList["header"] = "";
-      String config = await rootBundle.loadString('extras/config.json');
-
+      var dats = await ref.getData();
+      var s = new String.fromCharCodes(dats!);
       setState(() {
-        _itemList = jsonDecode(config);
+        _itemList = jsonDecode(s);
       });
     } catch (err) {
       print(err);
     }
-
-    // try {
-    //   var data = await http.get(Uri.parse(
-    //       'https://firebasestorage.googleapis.com/v0/b/gauntlet-260920.appspot.com/o/blog_config%2Fconfig.json?alt=media&token=d8b17647-7c8e-473d-8fe5-310de873845c'));
-    //   setState(() {
-    //     _itemList = jsonDecode(data.body);
-    //   });
-    // } catch (err) {
-    //   print(err);
-    // }
   }
 
   @override
